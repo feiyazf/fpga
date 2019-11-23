@@ -1,0 +1,993 @@
+
+*** Running vivado
+    with args -log GAODA.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source GAODA.tcl
+
+
+****** Vivado v2017.4 (64-bit)
+  **** SW Build 2086221 on Fri Dec 15 20:55:39 MST 2017
+  **** IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
+    ** Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+
+source GAODA.tcl -notrace
+Command: synth_design -top GAODA -part xc7a35tcsg324-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 49732 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:08 . Memory (MB): peak = 359.402 ; gain = 103.543
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'GAODA' [C:/Users/feiya/Desktop/GAODA/GAODA/value.srcs/sources_1/DDS/GAODA.v:1]
+INFO: [Synth 8-638] synthesizing module 'top_key_sw_dds' [C:/Users/feiya/Desktop/GAODA/GAODA/value.srcs/sources_1/DDS/top_key_sw_dds.v:1]
+INFO: [Synth 8-638] synthesizing module 'key_process' [C:/Users/feiya/Desktop/GAODA/GAODA/value.srcs/sources_1/DDS/key_process.v:1]
+INFO: [Synth 8-638] synthesizing module 'key_debounce' [C:/Users/feiya/Desktop/GAODA/GAODA/value.srcs/sources_1/DDS/key_debounce.v:2]
+	Parameter CNT bound to: 2000000 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'key_debounce' (1#1) [C:/Users/feiya/Desktop/GAODA/GAODA/value.srcs/sources_1/DDS/key_debounce.v:2]
+INFO: [Synth 8-256] done synthesizing module 'key_process' (2#1) [C:/Users/feiya/Desktop/GAODA/GAODA/value.srcs/sources_1/DDS/key_process.v:1]
+INFO: [Synth 8-638] synthesizing module 'freq_control' [C:/Users/feiya/Desktop/GAODA/GAODA/value.srcs/sources_1/DDS/freq_control.v:5]
+	Parameter CNT_1S bound to: 100000000 - type: integer 
+INFO: [Synth 8-226] default block is never used [C:/Users/feiya/Desktop/GAODA/GAODA/value.srcs/sources_1/DDS/freq_control.v:65]
+INFO: [Synth 8-638] synthesizing module 'bin_to_bcd' [C:/Users/feiya/Desktop/GAODA/GAODA/value.srcs/sources_1/DDS/bin_to_bcd.v:1]
+	Parameter DATA_WIDTH bound to: 24 - type: integer 
+	Parameter SHIFT_WIDTH bound to: 5 - type: integer 
+	Parameter SHIFT_DEPTH bound to: 24 - type: integer 
+	Parameter IDLE bound to: 3'b001 
+	Parameter SHIFT bound to: 3'b010 
+	Parameter DONE bound to: 3'b100 
+INFO: [Synth 8-256] done synthesizing module 'bin_to_bcd' (3#1) [C:/Users/feiya/Desktop/GAODA/GAODA/value.srcs/sources_1/DDS/bin_to_bcd.v:1]
+INFO: [Synth 8-256] done synthesizing module 'freq_control' (4#1) [C:/Users/feiya/Desktop/GAODA/GAODA/value.srcs/sources_1/DDS/freq_control.v:5]
+INFO: [Synth 8-638] synthesizing module 'wave_sel' [C:/Users/feiya/Desktop/GAODA/GAODA/value.srcs/sources_1/DDS/wave_sel.v:1]
+INFO: [Synth 8-256] done synthesizing module 'wave_sel' (5#1) [C:/Users/feiya/Desktop/GAODA/GAODA/value.srcs/sources_1/DDS/wave_sel.v:1]
+INFO: [Synth 8-638] synthesizing module 'dds' [C:/Users/feiya/Desktop/GAODA/GAODA/value.srcs/sources_1/DDS/dds.v:1]
+INFO: [Synth 8-226] default block is never used [C:/Users/feiya/Desktop/GAODA/GAODA/value.srcs/sources_1/DDS/dds.v:64]
+INFO: [Synth 8-638] synthesizing module 'sin_rom' [C:/Users/feiya/Desktop/GAODA/GAODA/value.runs/synth_1/.Xil/Vivado-59716-LAPTOP-3V9NHDMK/realtime/sin_rom_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'sin_rom' (6#1) [C:/Users/feiya/Desktop/GAODA/GAODA/value.runs/synth_1/.Xil/Vivado-59716-LAPTOP-3V9NHDMK/realtime/sin_rom_stub.v:6]
+INFO: [Synth 8-638] synthesizing module 'square_rom' [C:/Users/feiya/Desktop/GAODA/GAODA/value.runs/synth_1/.Xil/Vivado-59716-LAPTOP-3V9NHDMK/realtime/square_rom_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'square_rom' (7#1) [C:/Users/feiya/Desktop/GAODA/GAODA/value.runs/synth_1/.Xil/Vivado-59716-LAPTOP-3V9NHDMK/realtime/square_rom_stub.v:6]
+INFO: [Synth 8-638] synthesizing module 'saw_rom' [C:/Users/feiya/Desktop/GAODA/GAODA/value.runs/synth_1/.Xil/Vivado-59716-LAPTOP-3V9NHDMK/realtime/saw_rom_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'saw_rom' (8#1) [C:/Users/feiya/Desktop/GAODA/GAODA/value.runs/synth_1/.Xil/Vivado-59716-LAPTOP-3V9NHDMK/realtime/saw_rom_stub.v:6]
+INFO: [Synth 8-638] synthesizing module 'tri_rom' [C:/Users/feiya/Desktop/GAODA/GAODA/value.runs/synth_1/.Xil/Vivado-59716-LAPTOP-3V9NHDMK/realtime/tri_rom_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'tri_rom' (9#1) [C:/Users/feiya/Desktop/GAODA/GAODA/value.runs/synth_1/.Xil/Vivado-59716-LAPTOP-3V9NHDMK/realtime/tri_rom_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'dds' (10#1) [C:/Users/feiya/Desktop/GAODA/GAODA/value.srcs/sources_1/DDS/dds.v:1]
+INFO: [Synth 8-638] synthesizing module 'amp_adj' [C:/Users/feiya/Desktop/GAODA/GAODA/value.srcs/sources_1/DDS/dadata_amp.v:1]
+INFO: [Synth 8-256] done synthesizing module 'amp_adj' (11#1) [C:/Users/feiya/Desktop/GAODA/GAODA/value.srcs/sources_1/DDS/dadata_amp.v:1]
+INFO: [Synth 8-256] done synthesizing module 'top_key_sw_dds' (12#1) [C:/Users/feiya/Desktop/GAODA/GAODA/value.srcs/sources_1/DDS/top_key_sw_dds.v:1]
+INFO: [Synth 8-638] synthesizing module 'top_oscilloscope' [C:/Users/feiya/Desktop/GAODA/GAODA/value.srcs/sources_1/OSILLISCOPE/top_oscilloscope.v:4]
+INFO: [Synth 8-638] synthesizing module 'clk_wiz_0' [C:/Users/feiya/Desktop/GAODA/GAODA/value.runs/synth_1/.Xil/Vivado-59716-LAPTOP-3V9NHDMK/realtime/clk_wiz_0_stub.v:5]
+INFO: [Synth 8-256] done synthesizing module 'clk_wiz_0' (13#1) [C:/Users/feiya/Desktop/GAODA/GAODA/value.runs/synth_1/.Xil/Vivado-59716-LAPTOP-3V9NHDMK/realtime/clk_wiz_0_stub.v:5]
+INFO: [Synth 8-638] synthesizing module 'value' [C:/Users/feiya/Desktop/GAODA/GAODA/value.srcs/sources_1/OSILLISCOPE/top_value.v:2]
+WARNING: [Synth 8-6014] Unused sequential element freq_r_reg was removed.  [C:/Users/feiya/Desktop/GAODA/GAODA/value.srcs/sources_1/OSILLISCOPE/top_value.v:35]
+WARNING: [Synth 8-5788] Register begin_flag_reg in module value is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/feiya/Desktop/GAODA/GAODA/value.srcs/sources_1/OSILLISCOPE/top_value.v:104]
+INFO: [Synth 8-256] done synthesizing module 'value' (14#1) [C:/Users/feiya/Desktop/GAODA/GAODA/value.srcs/sources_1/OSILLISCOPE/top_value.v:2]
+INFO: [Synth 8-638] synthesizing module 'plj' [C:/Users/feiya/Desktop/GAODA/GAODA/value.srcs/sources_1/OSILLISCOPE/top_plj.v:2]
+	Parameter ad_d_cankao1 bound to: 16'b0111111001100111 
+	Parameter ad_d_cankao2 bound to: 16'b1000000110011001 
+INFO: [Synth 8-256] done synthesizing module 'plj' (15#1) [C:/Users/feiya/Desktop/GAODA/GAODA/value.srcs/sources_1/OSILLISCOPE/top_plj.v:2]
+INFO: [Synth 8-638] synthesizing module 'conv' [C:/Users/feiya/Desktop/GAODA/GAODA/value.srcs/sources_1/OSILLISCOPE/conv.v:3]
+WARNING: [Synth 8-567] referenced signal 'min_r1' should be on the sensitivity list [C:/Users/feiya/Desktop/GAODA/GAODA/value.srcs/sources_1/OSILLISCOPE/conv.v:45]
+INFO: [Synth 8-256] done synthesizing module 'conv' (16#1) [C:/Users/feiya/Desktop/GAODA/GAODA/value.srcs/sources_1/OSILLISCOPE/conv.v:3]
+INFO: [Synth 8-638] synthesizing module 'osc' [C:/Users/feiya/Desktop/GAODA/GAODA/value.srcs/sources_1/OSILLISCOPE/top_osc.v:1]
+INFO: [Synth 8-638] synthesizing module 'color_bar' [C:/Users/feiya/Desktop/GAODA/GAODA/value.srcs/sources_1/OSILLISCOPE/color_bar.v:4]
+	Parameter H_ACTIVE bound to: 16'b0000010000000000 
+	Parameter H_FP bound to: 16'b0000000000011000 
+	Parameter H_SYNC bound to: 16'b0000000010001000 
+	Parameter H_BP bound to: 16'b0000000010100000 
+	Parameter V_ACTIVE bound to: 16'b0000001100000000 
+	Parameter V_FP bound to: 16'b0000000000000011 
+	Parameter V_SYNC bound to: 16'b0000000000000110 
+	Parameter V_BP bound to: 16'b0000000000011101 
+	Parameter HS_POL bound to: 1'b0 
+	Parameter VS_POL bound to: 1'b0 
+	Parameter H_TOTAL bound to: 16'b0000010101000000 
+	Parameter V_TOTAL bound to: 16'b0000001100100110 
+	Parameter WHITE_R bound to: 8'b11111111 
+	Parameter WHITE_G bound to: 8'b11111111 
+	Parameter WHITE_B bound to: 8'b11111111 
+	Parameter YELLOW_R bound to: 8'b11111111 
+	Parameter YELLOW_G bound to: 8'b11111111 
+	Parameter YELLOW_B bound to: 8'b00000000 
+	Parameter CYAN_R bound to: 8'b00000000 
+	Parameter CYAN_G bound to: 8'b11111111 
+	Parameter CYAN_B bound to: 8'b11111111 
+	Parameter GREEN_R bound to: 8'b00000000 
+	Parameter GREEN_G bound to: 8'b11111111 
+	Parameter GREEN_B bound to: 8'b00000000 
+	Parameter MAGENTA_R bound to: 8'b11111111 
+	Parameter MAGENTA_G bound to: 8'b00000000 
+	Parameter MAGENTA_B bound to: 8'b11111111 
+	Parameter RED_R bound to: 8'b11111111 
+	Parameter RED_G bound to: 8'b00000000 
+	Parameter RED_B bound to: 8'b00000000 
+	Parameter BLUE_R bound to: 8'b00000000 
+	Parameter BLUE_G bound to: 8'b00000000 
+	Parameter BLUE_B bound to: 8'b11111111 
+	Parameter BLACK_R bound to: 8'b00000000 
+	Parameter BLACK_G bound to: 8'b00000000 
+	Parameter BLACK_B bound to: 8'b00000000 
+INFO: [Synth 8-256] done synthesizing module 'color_bar' (17#1) [C:/Users/feiya/Desktop/GAODA/GAODA/value.srcs/sources_1/OSILLISCOPE/color_bar.v:4]
+INFO: [Synth 8-638] synthesizing module 'grid_display' [C:/Users/feiya/Desktop/GAODA/GAODA/value.srcs/sources_1/OSILLISCOPE/grid_display.v:3]
+INFO: [Synth 8-638] synthesizing module 'timing_gen_xy' [C:/Users/feiya/Desktop/GAODA/GAODA/value.srcs/sources_1/OSILLISCOPE/timing_gen_xy.v:2]
+	Parameter DATA_WIDTH bound to: 24 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'timing_gen_xy' (18#1) [C:/Users/feiya/Desktop/GAODA/GAODA/value.srcs/sources_1/OSILLISCOPE/timing_gen_xy.v:2]
+INFO: [Synth 8-256] done synthesizing module 'grid_display' (19#1) [C:/Users/feiya/Desktop/GAODA/GAODA/value.srcs/sources_1/OSILLISCOPE/grid_display.v:3]
+INFO: [Synth 8-638] synthesizing module 'ad9226_sample' [C:/Users/feiya/Desktop/GAODA/GAODA/value.srcs/sources_1/OSILLISCOPE/ad9226_sample.v:2]
+WARNING: [Synth 8-5788] Register cnt_reg in module ad9226_sample is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/feiya/Desktop/GAODA/GAODA/value.srcs/sources_1/OSILLISCOPE/ad9226_sample.v:33]
+INFO: [Synth 8-5837] Detected dual asynchronous set and preset for register start_reg in module ad9226_sample. This is not a recommended register style for Xilinx devices  [C:/Users/feiya/Desktop/GAODA/GAODA/value.srcs/sources_1/OSILLISCOPE/ad9226_sample.v:60]
+INFO: [Synth 8-256] done synthesizing module 'ad9226_sample' (20#1) [C:/Users/feiya/Desktop/GAODA/GAODA/value.srcs/sources_1/OSILLISCOPE/ad9226_sample.v:2]
+INFO: [Synth 8-638] synthesizing module 'wav_display' [C:/Users/feiya/Desktop/GAODA/GAODA/value.srcs/sources_1/OSILLISCOPE/wav_display.v:2]
+INFO: [Synth 8-638] synthesizing module 'blk_mem_gen_0' [C:/Users/feiya/Desktop/GAODA/GAODA/value.runs/synth_1/.Xil/Vivado-59716-LAPTOP-3V9NHDMK/realtime/blk_mem_gen_0_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'blk_mem_gen_0' (21#1) [C:/Users/feiya/Desktop/GAODA/GAODA/value.runs/synth_1/.Xil/Vivado-59716-LAPTOP-3V9NHDMK/realtime/blk_mem_gen_0_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'wav_display' (22#1) [C:/Users/feiya/Desktop/GAODA/GAODA/value.srcs/sources_1/OSILLISCOPE/wav_display.v:2]
+INFO: [Synth 8-256] done synthesizing module 'osc' (23#1) [C:/Users/feiya/Desktop/GAODA/GAODA/value.srcs/sources_1/OSILLISCOPE/top_osc.v:1]
+INFO: [Synth 8-256] done synthesizing module 'top_oscilloscope' (24#1) [C:/Users/feiya/Desktop/GAODA/GAODA/value.srcs/sources_1/OSILLISCOPE/top_oscilloscope.v:4]
+INFO: [Synth 8-638] synthesizing module 'seg_top' [C:/Users/feiya/Desktop/GAODA/GAODA/value.srcs/sources_1/OSILLISCOPE/top_seg.v:2]
+INFO: [Synth 8-638] synthesizing module 'seg_decoder' [C:/Users/feiya/Desktop/GAODA/GAODA/value.srcs/sources_1/OSILLISCOPE/seg_decoder.v:2]
+	Parameter _0 bound to: 8'b11000000 
+	Parameter _1 bound to: 8'b11111001 
+	Parameter _2 bound to: 8'b10100100 
+	Parameter _3 bound to: 8'b10110000 
+	Parameter _4 bound to: 8'b10011001 
+	Parameter _5 bound to: 8'b10010010 
+	Parameter _6 bound to: 8'b10000010 
+	Parameter _7 bound to: 8'b11111000 
+	Parameter _8 bound to: 8'b10000000 
+	Parameter _9 bound to: 8'b10010000 
+INFO: [Synth 8-256] done synthesizing module 'seg_decoder' (25#1) [C:/Users/feiya/Desktop/GAODA/GAODA/value.srcs/sources_1/OSILLISCOPE/seg_decoder.v:2]
+INFO: [Synth 8-638] synthesizing module 'seg_scan' [C:/Users/feiya/Desktop/GAODA/GAODA/value.srcs/sources_1/OSILLISCOPE/seg_scan.v:4]
+	Parameter SCAN_FREQ bound to: 200 - type: integer 
+	Parameter CLK_FREQ bound to: 100000000 - type: integer 
+	Parameter SCAN_COUNT bound to: 62499 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'seg_scan' (26#1) [C:/Users/feiya/Desktop/GAODA/GAODA/value.srcs/sources_1/OSILLISCOPE/seg_scan.v:4]
+INFO: [Synth 8-256] done synthesizing module 'seg_top' (27#1) [C:/Users/feiya/Desktop/GAODA/GAODA/value.srcs/sources_1/OSILLISCOPE/top_seg.v:2]
+WARNING: [Synth 8-5788] Register idot_reg in module GAODA is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/feiya/Desktop/GAODA/GAODA/value.srcs/sources_1/DDS/GAODA.v:85]
+INFO: [Synth 8-256] done synthesizing module 'GAODA' (28#1) [C:/Users/feiya/Desktop/GAODA/GAODA/value.srcs/sources_1/DDS/GAODA.v:1]
+WARNING: [Synth 8-3331] design ad9226_sample has unconnected port adc_data[3]
+WARNING: [Synth 8-3331] design ad9226_sample has unconnected port adc_data[2]
+WARNING: [Synth 8-3331] design ad9226_sample has unconnected port adc_data[1]
+WARNING: [Synth 8-3331] design ad9226_sample has unconnected port adc_data[0]
+WARNING: [Synth 8-3331] design osc has unconnected port clk
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:10 . Memory (MB): peak = 413.145 ; gain = 157.285
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:07 ; elapsed = 00:00:11 . Memory (MB): peak = 413.145 ; gain = 157.285
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7a35tcsg324-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [C:/Users/feiya/Desktop/GAODA/GAODA/value.runs/synth_1/.Xil/Vivado-59716-LAPTOP-3V9NHDMK/dcp6/clk_wiz_0_in_context.xdc] for cell 'top_oscilloscope/pll_m0'
+Finished Parsing XDC File [C:/Users/feiya/Desktop/GAODA/GAODA/value.runs/synth_1/.Xil/Vivado-59716-LAPTOP-3V9NHDMK/dcp6/clk_wiz_0_in_context.xdc] for cell 'top_oscilloscope/pll_m0'
+Parsing XDC File [C:/Users/feiya/Desktop/GAODA/GAODA/value.runs/synth_1/.Xil/Vivado-59716-LAPTOP-3V9NHDMK/dcp7/blk_mem_gen_0_in_context.xdc] for cell 'top_oscilloscope/my_osc/wav_display_m0/uut_ram'
+Finished Parsing XDC File [C:/Users/feiya/Desktop/GAODA/GAODA/value.runs/synth_1/.Xil/Vivado-59716-LAPTOP-3V9NHDMK/dcp7/blk_mem_gen_0_in_context.xdc] for cell 'top_oscilloscope/my_osc/wav_display_m0/uut_ram'
+Parsing XDC File [C:/Users/feiya/Desktop/GAODA/GAODA/value.runs/synth_1/.Xil/Vivado-59716-LAPTOP-3V9NHDMK/dcp8/saw_rom_in_context.xdc] for cell 'top_key_sw_dds/dds/saw_rom_inst'
+Finished Parsing XDC File [C:/Users/feiya/Desktop/GAODA/GAODA/value.runs/synth_1/.Xil/Vivado-59716-LAPTOP-3V9NHDMK/dcp8/saw_rom_in_context.xdc] for cell 'top_key_sw_dds/dds/saw_rom_inst'
+Parsing XDC File [C:/Users/feiya/Desktop/GAODA/GAODA/value.runs/synth_1/.Xil/Vivado-59716-LAPTOP-3V9NHDMK/dcp9/tri_rom_in_context.xdc] for cell 'top_key_sw_dds/dds/tri_rom_inst'
+Finished Parsing XDC File [C:/Users/feiya/Desktop/GAODA/GAODA/value.runs/synth_1/.Xil/Vivado-59716-LAPTOP-3V9NHDMK/dcp9/tri_rom_in_context.xdc] for cell 'top_key_sw_dds/dds/tri_rom_inst'
+Parsing XDC File [C:/Users/feiya/Desktop/GAODA/GAODA/value.runs/synth_1/.Xil/Vivado-59716-LAPTOP-3V9NHDMK/dcp10/square_rom_in_context.xdc] for cell 'top_key_sw_dds/dds/square_rom_inst'
+Finished Parsing XDC File [C:/Users/feiya/Desktop/GAODA/GAODA/value.runs/synth_1/.Xil/Vivado-59716-LAPTOP-3V9NHDMK/dcp10/square_rom_in_context.xdc] for cell 'top_key_sw_dds/dds/square_rom_inst'
+Parsing XDC File [C:/Users/feiya/Desktop/GAODA/GAODA/value.runs/synth_1/.Xil/Vivado-59716-LAPTOP-3V9NHDMK/dcp11/sin_rom_in_context.xdc] for cell 'top_key_sw_dds/dds/sin_rom_inst'
+Finished Parsing XDC File [C:/Users/feiya/Desktop/GAODA/GAODA/value.runs/synth_1/.Xil/Vivado-59716-LAPTOP-3V9NHDMK/dcp11/sin_rom_in_context.xdc] for cell 'top_key_sw_dds/dds/sin_rom_inst'
+Parsing XDC File [C:/Users/feiya/Desktop/GAODA/GAODA/value.srcs/sources_1/constrs/display_vga.xdc]
+Finished Parsing XDC File [C:/Users/feiya/Desktop/GAODA/GAODA/value.srcs/sources_1/constrs/display_vga.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/feiya/Desktop/GAODA/GAODA/value.srcs/sources_1/constrs/display_vga.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/GAODA_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/GAODA_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.122 . Memory (MB): peak = 765.410 ; gain = 0.000
+WARNING: [Timing 38-316] Clock period '20.000' specified during out-of-context synthesis of instance 'top_key_sw_dds/dds/saw_rom_inst' at clock pin 'clka' is different from the actual clock period '10.000', this can lead to different synthesis results.
+WARNING: [Timing 38-316] Clock period '20.000' specified during out-of-context synthesis of instance 'top_key_sw_dds/dds/sin_rom_inst' at clock pin 'clka' is different from the actual clock period '10.000', this can lead to different synthesis results.
+WARNING: [Timing 38-316] Clock period '20.000' specified during out-of-context synthesis of instance 'top_key_sw_dds/dds/square_rom_inst' at clock pin 'clka' is different from the actual clock period '10.000', this can lead to different synthesis results.
+WARNING: [Timing 38-316] Clock period '20.000' specified during out-of-context synthesis of instance 'top_key_sw_dds/dds/tri_rom_inst' at clock pin 'clka' is different from the actual clock period '10.000', this can lead to different synthesis results.
+WARNING: [Timing 38-316] Clock period '20.000' specified during out-of-context synthesis of instance 'top_oscilloscope/my_osc/wav_display_m0/uut_ram' at clock pin 'clkb' is different from the actual clock period '15.385', this can lead to different synthesis results.
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:21 ; elapsed = 00:00:44 . Memory (MB): peak = 765.410 ; gain = 509.551
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a35tcsg324-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:21 ; elapsed = 00:00:44 . Memory (MB): peak = 765.410 ; gain = 509.551
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property IO_BUFFER_TYPE = NONE for sys_clk. (constraint file  C:/Users/feiya/Desktop/GAODA/GAODA/value.runs/synth_1/.Xil/Vivado-59716-LAPTOP-3V9NHDMK/dcp6/clk_wiz_0_in_context.xdc, line 4).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for sys_clk. (constraint file  C:/Users/feiya/Desktop/GAODA/GAODA/value.runs/synth_1/.Xil/Vivado-59716-LAPTOP-3V9NHDMK/dcp6/clk_wiz_0_in_context.xdc, line 5).
+Applied set_property DONT_TOUCH = true for top_key_sw_dds/dds/saw_rom_inst. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for top_key_sw_dds/dds/sin_rom_inst. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for top_key_sw_dds/dds/square_rom_inst. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for top_key_sw_dds/dds/tri_rom_inst. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for top_oscilloscope/my_osc/wav_display_m0/uut_ram. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for top_oscilloscope/pll_m0. (constraint file  auto generated constraint, line ).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:21 ; elapsed = 00:00:44 . Memory (MB): peak = 765.410 ; gain = 509.551
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5546] ROM "key_value" won't be mapped to RAM because it is too sparse
+WARNING: [Synth 8-6014] Unused sequential element delay_cnt_reg was removed.  [C:/Users/feiya/Desktop/GAODA/GAODA/value.srcs/sources_1/DDS/key_debounce.v:21]
+INFO: [Synth 8-5546] ROM "thou_reg" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "tran_done" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "shift_cnt" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "next_state" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "next_state" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [C:/Users/feiya/Desktop/GAODA/GAODA/value.srcs/sources_1/DDS/freq_control.v:195]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [C:/Users/feiya/Desktop/GAODA/GAODA/value.srcs/sources_1/DDS/freq_control.v:177]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [C:/Users/feiya/Desktop/GAODA/GAODA/value.srcs/sources_1/DDS/freq_control.v:159]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [C:/Users/feiya/Desktop/GAODA/GAODA/value.srcs/sources_1/DDS/freq_control.v:67]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [C:/Users/feiya/Desktop/GAODA/GAODA/value.srcs/sources_1/DDS/freq_control.v:65]
+INFO: [Synth 8-5545] ROM "freq" won't be mapped to RAM because address size (27) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "freq" won't be mapped to RAM because address size (27) is larger than maximum supported(25)
+WARNING: [Synth 8-6014] Unused sequential element cnt_1s_up_reg was removed.  [C:/Users/feiya/Desktop/GAODA/GAODA/value.srcs/sources_1/DDS/freq_control.v:36]
+WARNING: [Synth 8-6014] Unused sequential element cnt_1s_down_reg was removed.  [C:/Users/feiya/Desktop/GAODA/GAODA/value.srcs/sources_1/DDS/freq_control.v:48]
+WARNING: [Synth 8-6014] Unused sequential element dds1_phase_add_reg was removed.  [C:/Users/feiya/Desktop/GAODA/GAODA/value.srcs/sources_1/DDS/dds.v:29]
+WARNING: [Synth 8-6014] Unused sequential element cnt1_reg was removed.  [C:/Users/feiya/Desktop/GAODA/GAODA/value.srcs/sources_1/OSILLISCOPE/top_value.v:57]
+WARNING: [Synth 8-6014] Unused sequential element cnt2_reg was removed.  [C:/Users/feiya/Desktop/GAODA/GAODA/value.srcs/sources_1/OSILLISCOPE/top_value.v:89]
+WARNING: [Synth 8-6014] Unused sequential element max_total_reg was removed.  [C:/Users/feiya/Desktop/GAODA/GAODA/value.srcs/sources_1/OSILLISCOPE/top_value.v:90]
+WARNING: [Synth 8-6014] Unused sequential element min_total_reg was removed.  [C:/Users/feiya/Desktop/GAODA/GAODA/value.srcs/sources_1/OSILLISCOPE/top_value.v:91]
+INFO: [Synth 8-5545] ROM "yimiao_rst" won't be mapped to RAM because address size (31) is larger than maximum supported(25)
+INFO: [Synth 8-5544] ROM "data1" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "data2" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "data3" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "data4" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "data5" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "data6" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "data7" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+WARNING: [Synth 8-6014] Unused sequential element freq_reg was removed.  [C:/Users/feiya/Desktop/GAODA/GAODA/value.srcs/sources_1/OSILLISCOPE/top_plj.v:93]
+INFO: [Synth 8-5546] ROM "v_cnt" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "h_active" won't be mapped to RAM because it is too sparse
+WARNING: [Synth 8-6014] Unused sequential element x_cnt_reg was removed.  [C:/Users/feiya/Desktop/GAODA/GAODA/value.srcs/sources_1/OSILLISCOPE/timing_gen_xy.v:51]
+WARNING: [Synth 8-6014] Unused sequential element y_cnt_reg was removed.  [C:/Users/feiya/Desktop/GAODA/GAODA/value.srcs/sources_1/OSILLISCOPE/timing_gen_xy.v:60]
+INFO: [Synth 8-5546] ROM "adc_buf_wr" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "start" won't be mapped to RAM because it is too sparse
+WARNING: [Synth 8-6014] Unused sequential element rdaddress_reg was removed.  [C:/Users/feiya/Desktop/GAODA/GAODA/value.srcs/sources_1/OSILLISCOPE/wav_display.v:45]
+WARNING: [Synth 8-6014] Unused sequential element scan_timer_reg was removed.  [C:/Users/feiya/Desktop/GAODA/GAODA/value.srcs/sources_1/OSILLISCOPE/seg_scan.v:31]
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:23 ; elapsed = 00:00:46 . Memory (MB): peak = 765.410 ; gain = 509.551
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     31 Bit       Adders := 1     
+	   2 Input     24 Bit       Adders := 7     
+	   2 Input     21 Bit       Adders := 2     
+	   3 Input     12 Bit       Adders := 1     
+	   2 Input     12 Bit       Adders := 4     
+	   2 Input     11 Bit       Adders := 1     
+	   2 Input     10 Bit       Adders := 1     
+	   2 Input      9 Bit       Adders := 1     
+	   2 Input      4 Bit       Adders := 16    
+	   2 Input      3 Bit       Adders := 1     
++---Registers : 
+	               32 Bit    Registers := 3     
+	               31 Bit    Registers := 1     
+	               27 Bit    Registers := 1     
+	               25 Bit    Registers := 1     
+	               24 Bit    Registers := 8     
+	               21 Bit    Registers := 3     
+	               16 Bit    Registers := 1     
+	               14 Bit    Registers := 1     
+	               12 Bit    Registers := 9     
+	               11 Bit    Registers := 2     
+	               10 Bit    Registers := 1     
+	                9 Bit    Registers := 3     
+	                8 Bit    Registers := 7     
+	                4 Bit    Registers := 25    
+	                3 Bit    Registers := 2     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 32    
++---Muxes : 
+	   2 Input     31 Bit        Muxes := 1     
+	   4 Input     25 Bit        Muxes := 1     
+	   2 Input     25 Bit        Muxes := 1     
+	   8 Input     25 Bit        Muxes := 1     
+	   2 Input     24 Bit        Muxes := 3     
+	   4 Input     24 Bit        Muxes := 1     
+	   3 Input     24 Bit        Muxes := 1     
+	   2 Input     21 Bit        Muxes := 16    
+	   2 Input     20 Bit        Muxes := 2     
+	   2 Input     18 Bit        Muxes := 1     
+	   2 Input     15 Bit        Muxes := 1     
+	   2 Input     12 Bit        Muxes := 2     
+	   2 Input     11 Bit        Muxes := 2     
+	   2 Input      9 Bit        Muxes := 1     
+	   2 Input      8 Bit        Muxes := 3     
+	   4 Input      8 Bit        Muxes := 1     
+	   8 Input      8 Bit        Muxes := 2     
+	   6 Input      8 Bit        Muxes := 1     
+	   9 Input      8 Bit        Muxes := 1     
+	   2 Input      5 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 18    
+	   4 Input      4 Bit        Muxes := 8     
+	   2 Input      3 Bit        Muxes := 2     
+	   4 Input      3 Bit        Muxes := 2     
+	   2 Input      2 Bit        Muxes := 3     
+	   2 Input      1 Bit        Muxes := 52    
+	   4 Input      1 Bit        Muxes := 2     
+	   5 Input      1 Bit        Muxes := 1     
+	   3 Input      1 Bit        Muxes := 3     
+	  10 Input      1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module GAODA 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
+Module key_debounce 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 2     
+Module bin_to_bcd 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     24 Bit       Adders := 1     
+	   2 Input      4 Bit       Adders := 7     
+	   2 Input      3 Bit       Adders := 1     
++---Registers : 
+	               25 Bit    Registers := 1     
+	               24 Bit    Registers := 1     
+	                4 Bit    Registers := 16    
+	                3 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   4 Input     25 Bit        Muxes := 1     
+	   2 Input     24 Bit        Muxes := 1     
+	   4 Input     24 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 7     
+	   4 Input      4 Bit        Muxes := 8     
+	   2 Input      3 Bit        Muxes := 2     
+	   4 Input      3 Bit        Muxes := 2     
+	   2 Input      2 Bit        Muxes := 2     
+	   4 Input      1 Bit        Muxes := 2     
+	   5 Input      1 Bit        Muxes := 1     
+Module freq_control 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     24 Bit       Adders := 6     
++---Registers : 
+	               24 Bit    Registers := 1     
+	                3 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     25 Bit        Muxes := 1     
+	   8 Input     25 Bit        Muxes := 1     
+	   2 Input     21 Bit        Muxes := 1     
+	   2 Input     18 Bit        Muxes := 1     
+	   2 Input     15 Bit        Muxes := 1     
+	   2 Input     11 Bit        Muxes := 1     
+	   2 Input      8 Bit        Muxes := 1     
+	   2 Input      5 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+	   3 Input      1 Bit        Muxes := 1     
+Module wave_sel 
+Detailed RTL Component Info : 
++---Registers : 
+	                2 Bit    Registers := 1     
+Module dds 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 1     
+	                9 Bit    Registers := 2     
+	                8 Bit    Registers := 1     
++---Muxes : 
+	   4 Input      8 Bit        Muxes := 1     
+Module amp_adj 
+Detailed RTL Component Info : 
++---Registers : 
+	               14 Bit    Registers := 1     
+Module value 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input     12 Bit       Adders := 1     
++---Registers : 
+	               21 Bit    Registers := 1     
+	               12 Bit    Registers := 6     
+	               11 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 2     
+Module plj 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     31 Bit       Adders := 1     
+	   2 Input      4 Bit       Adders := 8     
++---Registers : 
+	               32 Bit    Registers := 1     
+	               31 Bit    Registers := 1     
+	               16 Bit    Registers := 1     
+	                4 Bit    Registers := 8     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   2 Input     31 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 8     
+	   2 Input      1 Bit        Muxes := 28    
+Module conv 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input     20 Bit        Muxes := 2     
+	   2 Input      4 Bit        Muxes := 2     
+Module color_bar 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     12 Bit       Adders := 3     
++---Registers : 
+	               12 Bit    Registers := 3     
+	                8 Bit    Registers := 3     
+	                1 Bit    Registers := 7     
++---Muxes : 
+	   2 Input     12 Bit        Muxes := 2     
+	   8 Input      8 Bit        Muxes := 1     
+	   6 Input      8 Bit        Muxes := 1     
+	   9 Input      8 Bit        Muxes := 1     
+	   3 Input      1 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 7     
+	  10 Input      1 Bit        Muxes := 1     
+Module timing_gen_xy 
+Detailed RTL Component Info : 
++---Registers : 
+	               24 Bit    Registers := 2     
+	                1 Bit    Registers := 6     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module grid_display 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      9 Bit       Adders := 1     
++---Registers : 
+	               24 Bit    Registers := 1     
+	                9 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   3 Input     24 Bit        Muxes := 1     
+	   2 Input      9 Bit        Muxes := 1     
+Module ad9226_sample 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     21 Bit       Adders := 2     
+	   2 Input     11 Bit       Adders := 1     
++---Registers : 
+	               27 Bit    Registers := 1     
+	               21 Bit    Registers := 2     
+	               11 Bit    Registers := 1     
+	                8 Bit    Registers := 1     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   2 Input     21 Bit        Muxes := 15    
+	   2 Input     11 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 8     
+Module wav_display 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     12 Bit       Adders := 1     
+	   2 Input     10 Bit       Adders := 1     
++---Registers : 
+	               24 Bit    Registers := 1     
+	               10 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     24 Bit        Muxes := 2     
+Module seg_scan 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      4 Bit       Adders := 1     
++---Registers : 
+	                8 Bit    Registers := 2     
+	                4 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 2     
+	   8 Input      8 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 90 (col length:60)
+BRAMs: 100 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-6014] Unused sequential element cnt1_reg was removed.  [C:/Users/feiya/Desktop/GAODA/GAODA/value.srcs/sources_1/OSILLISCOPE/top_value.v:57]
+WARNING: [Synth 8-6014] Unused sequential element cnt2_reg was removed.  [C:/Users/feiya/Desktop/GAODA/GAODA/value.srcs/sources_1/OSILLISCOPE/top_value.v:89]
+WARNING: [Synth 8-6014] Unused sequential element max_total_reg was removed.  [C:/Users/feiya/Desktop/GAODA/GAODA/value.srcs/sources_1/OSILLISCOPE/top_value.v:90]
+WARNING: [Synth 8-6014] Unused sequential element min_total_reg was removed.  [C:/Users/feiya/Desktop/GAODA/GAODA/value.srcs/sources_1/OSILLISCOPE/top_value.v:91]
+INFO: [Synth 8-5545] ROM "yimiao_rst" won't be mapped to RAM because address size (31) is larger than maximum supported(25)
+WARNING: [Synth 8-6014] Unused sequential element freq_reg was removed.  [C:/Users/feiya/Desktop/GAODA/GAODA/value.srcs/sources_1/OSILLISCOPE/top_plj.v:93]
+DSP Report: Generating DSP max_data3, operation Mode is: (A:0x2710)*B.
+DSP Report: operator max_data3 is absorbed into DSP max_data3.
+DSP Report: Generating DSP max_data3, operation Mode is: (A:0x2710)*B.
+DSP Report: operator max_data3 is absorbed into DSP max_data3.
+DSP Report: Generating DSP min_data3, operation Mode is: (A:0x2710)*B.
+DSP Report: operator min_data3 is absorbed into DSP min_data3.
+DSP Report: Generating DSP min_data3, operation Mode is: (A:0x2710)*B.
+DSP Report: operator min_data3 is absorbed into DSP min_data3.
+DSP Report: Generating DSP amp_data3, operation Mode is: (A:0x2710)*B.
+DSP Report: operator amp_data3 is absorbed into DSP amp_data3.
+INFO: [Synth 8-5546] ROM "p_0_out" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "color_bar_m0/v_cnt" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "p_0_out" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "color_bar_m0/h_active" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ad9226_sample_m0/start" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ad9226_sample_m0/adc_buf_wr" won't be mapped to RAM because it is too sparse
+WARNING: [Synth 8-6014] Unused sequential element grid_display_m0/timing_gen_xy_m0/x_cnt_reg was removed.  [C:/Users/feiya/Desktop/GAODA/GAODA/value.srcs/sources_1/OSILLISCOPE/timing_gen_xy.v:51]
+WARNING: [Synth 8-6014] Unused sequential element grid_display_m0/timing_gen_xy_m0/y_cnt_reg was removed.  [C:/Users/feiya/Desktop/GAODA/GAODA/value.srcs/sources_1/OSILLISCOPE/timing_gen_xy.v:60]
+WARNING: [Synth 8-6014] Unused sequential element wav_display_m0/timing_gen_xy_m0/x_cnt_reg was removed.  [C:/Users/feiya/Desktop/GAODA/GAODA/value.srcs/sources_1/OSILLISCOPE/timing_gen_xy.v:51]
+WARNING: [Synth 8-6014] Unused sequential element wav_display_m0/timing_gen_xy_m0/y_cnt_reg was removed.  [C:/Users/feiya/Desktop/GAODA/GAODA/value.srcs/sources_1/OSILLISCOPE/timing_gen_xy.v:60]
+WARNING: [Synth 8-6014] Unused sequential element wav_display_m0/rdaddress_reg was removed.  [C:/Users/feiya/Desktop/GAODA/GAODA/value.srcs/sources_1/OSILLISCOPE/wav_display.v:45]
+INFO: [Synth 8-5546] ROM "top_key_sw_dds/key_process/key_freq_up_inst/key_value" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "top_key_sw_dds/key_process/key_freq_down_inst1/key_value" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "top_key_sw_dds/freq_control/bin_to_bcd_inst/next_state" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5545] ROM "top_key_sw_dds/freq_control/freq" won't be mapped to RAM because address size (27) is larger than maximum supported(25)
+WARNING: [Synth 8-6014] Unused sequential element top_key_sw_dds/key_process/key_freq_up_inst/delay_cnt_reg was removed.  [C:/Users/feiya/Desktop/GAODA/GAODA/value.srcs/sources_1/DDS/key_debounce.v:21]
+WARNING: [Synth 8-6014] Unused sequential element top_key_sw_dds/key_process/key_freq_down_inst1/delay_cnt_reg was removed.  [C:/Users/feiya/Desktop/GAODA/GAODA/value.srcs/sources_1/DDS/key_debounce.v:21]
+WARNING: [Synth 8-6014] Unused sequential element top_key_sw_dds/freq_control/cnt_1s_down_reg was removed.  [C:/Users/feiya/Desktop/GAODA/GAODA/value.srcs/sources_1/DDS/freq_control.v:48]
+WARNING: [Synth 8-6014] Unused sequential element top_key_sw_dds/freq_control/cnt_1s_up_reg was removed.  [C:/Users/feiya/Desktop/GAODA/GAODA/value.srcs/sources_1/DDS/freq_control.v:36]
+WARNING: [Synth 8-6014] Unused sequential element top_key_sw_dds/dds/dds1_phase_add_reg was removed.  [C:/Users/feiya/Desktop/GAODA/GAODA/value.srcs/sources_1/DDS/dds.v:29]
+WARNING: [Synth 8-6014] Unused sequential element seg_top/seg_scan_m0/scan_timer_reg was removed.  [C:/Users/feiya/Desktop/GAODA/GAODA/value.srcs/sources_1/OSILLISCOPE/seg_scan.v:31]
+DSP Report: Generating DSP top_key_sw_dds/dds/dds1_freq_reg0, operation Mode is: A*(B:0x158).
+DSP Report: operator top_key_sw_dds/dds/dds1_freq_reg0 is absorbed into DSP top_key_sw_dds/dds/dds1_freq_reg0.
+WARNING: [Synth 8-3331] design osc has unconnected port clk
+WARNING: [Synth 8-3331] design osc has unconnected port ad9226_data_ch0[3]
+WARNING: [Synth 8-3331] design osc has unconnected port ad9226_data_ch0[2]
+WARNING: [Synth 8-3331] design osc has unconnected port ad9226_data_ch0[1]
+WARNING: [Synth 8-3331] design osc has unconnected port ad9226_data_ch0[0]
+INFO: [Synth 8-3886] merging instance 'top_oscilloscope/my_osc/color_bar_m0/rgb_b_reg_reg[4]' (FDCE) to 'top_oscilloscope/my_osc/color_bar_m0/rgb_b_reg_reg[5]'
+INFO: [Synth 8-3886] merging instance 'top_oscilloscope/my_osc/color_bar_m0/rgb_b_reg_reg[5]' (FDCE) to 'top_oscilloscope/my_osc/color_bar_m0/rgb_b_reg_reg[6]'
+INFO: [Synth 8-3886] merging instance 'top_oscilloscope/my_osc/color_bar_m0/rgb_b_reg_reg[6]' (FDCE) to 'top_oscilloscope/my_osc/color_bar_m0/rgb_b_reg_reg[7]'
+INFO: [Synth 8-3886] merging instance 'top_oscilloscope/my_osc/color_bar_m0/rgb_g_reg_reg[4]' (FDCE) to 'top_oscilloscope/my_osc/color_bar_m0/rgb_g_reg_reg[5]'
+INFO: [Synth 8-3886] merging instance 'top_oscilloscope/my_osc/color_bar_m0/rgb_g_reg_reg[5]' (FDCE) to 'top_oscilloscope/my_osc/color_bar_m0/rgb_g_reg_reg[6]'
+INFO: [Synth 8-3886] merging instance 'top_oscilloscope/my_osc/color_bar_m0/rgb_g_reg_reg[6]' (FDCE) to 'top_oscilloscope/my_osc/color_bar_m0/rgb_g_reg_reg[7]'
+INFO: [Synth 8-3886] merging instance 'top_oscilloscope/my_osc/color_bar_m0/rgb_r_reg_reg[4]' (FDCE) to 'top_oscilloscope/my_osc/color_bar_m0/rgb_r_reg_reg[5]'
+INFO: [Synth 8-3886] merging instance 'top_oscilloscope/my_osc/color_bar_m0/rgb_r_reg_reg[5]' (FDCE) to 'top_oscilloscope/my_osc/color_bar_m0/rgb_r_reg_reg[6]'
+INFO: [Synth 8-3886] merging instance 'top_oscilloscope/my_osc/color_bar_m0/rgb_r_reg_reg[6]' (FDCE) to 'top_oscilloscope/my_osc/color_bar_m0/rgb_r_reg_reg[7]'
+INFO: [Synth 8-3886] merging instance 'top_oscilloscope/my_plj/ad1_d_r_reg[3]' (FD) to 'top_oscilloscope/my_plj/ad1_d_r_reg[2]'
+INFO: [Synth 8-3886] merging instance 'top_oscilloscope/my_plj/ad1_d_r_reg[2]' (FD) to 'top_oscilloscope/my_plj/ad1_d_r_reg[1]'
+INFO: [Synth 8-3886] merging instance 'top_oscilloscope/my_plj/ad1_d_r_reg[0]' (FD) to 'top_oscilloscope/my_plj/ad1_d_r_reg[1]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (top_oscilloscope/my_plj/\ad1_d_r_reg[1] )
+INFO: [Synth 8-3886] merging instance 'top_oscilloscope/my_osc/grid_display_m0/timing_gen_xy_m0/i_data_d0_reg[4]' (FD) to 'top_oscilloscope/my_osc/grid_display_m0/timing_gen_xy_m0/i_data_d0_reg[6]'
+INFO: [Synth 8-3886] merging instance 'top_oscilloscope/my_osc/grid_display_m0/timing_gen_xy_m0/i_data_d0_reg[5]' (FD) to 'top_oscilloscope/my_osc/grid_display_m0/timing_gen_xy_m0/i_data_d0_reg[6]'
+INFO: [Synth 8-3886] merging instance 'top_oscilloscope/my_osc/grid_display_m0/timing_gen_xy_m0/i_data_d0_reg[6]' (FD) to 'top_oscilloscope/my_osc/grid_display_m0/timing_gen_xy_m0/i_data_d0_reg[7]'
+INFO: [Synth 8-3886] merging instance 'top_oscilloscope/my_osc/grid_display_m0/timing_gen_xy_m0/i_data_d0_reg[12]' (FD) to 'top_oscilloscope/my_osc/grid_display_m0/timing_gen_xy_m0/i_data_d0_reg[14]'
+INFO: [Synth 8-3886] merging instance 'top_oscilloscope/my_osc/grid_display_m0/timing_gen_xy_m0/i_data_d0_reg[13]' (FD) to 'top_oscilloscope/my_osc/grid_display_m0/timing_gen_xy_m0/i_data_d0_reg[14]'
+INFO: [Synth 8-3886] merging instance 'top_oscilloscope/my_osc/grid_display_m0/timing_gen_xy_m0/i_data_d0_reg[14]' (FD) to 'top_oscilloscope/my_osc/grid_display_m0/timing_gen_xy_m0/i_data_d0_reg[15]'
+INFO: [Synth 8-3886] merging instance 'top_oscilloscope/my_osc/grid_display_m0/timing_gen_xy_m0/i_data_d0_reg[20]' (FD) to 'top_oscilloscope/my_osc/grid_display_m0/timing_gen_xy_m0/i_data_d0_reg[22]'
+INFO: [Synth 8-3886] merging instance 'top_oscilloscope/my_osc/grid_display_m0/timing_gen_xy_m0/i_data_d0_reg[21]' (FD) to 'top_oscilloscope/my_osc/grid_display_m0/timing_gen_xy_m0/i_data_d0_reg[22]'
+INFO: [Synth 8-3886] merging instance 'top_oscilloscope/my_osc/grid_display_m0/timing_gen_xy_m0/i_data_d0_reg[22]' (FD) to 'top_oscilloscope/my_osc/grid_display_m0/timing_gen_xy_m0/i_data_d0_reg[23]'
+INFO: [Synth 8-3886] merging instance 'top_oscilloscope/my_osc/grid_display_m0/timing_gen_xy_m0/i_data_d1_reg[4]' (FD) to 'top_oscilloscope/my_osc/grid_display_m0/timing_gen_xy_m0/i_data_d1_reg[6]'
+INFO: [Synth 8-3886] merging instance 'top_oscilloscope/my_osc/grid_display_m0/timing_gen_xy_m0/i_data_d1_reg[5]' (FD) to 'top_oscilloscope/my_osc/grid_display_m0/timing_gen_xy_m0/i_data_d1_reg[6]'
+INFO: [Synth 8-3886] merging instance 'top_oscilloscope/my_osc/grid_display_m0/timing_gen_xy_m0/i_data_d1_reg[6]' (FD) to 'top_oscilloscope/my_osc/grid_display_m0/timing_gen_xy_m0/i_data_d1_reg[7]'
+INFO: [Synth 8-3886] merging instance 'top_oscilloscope/my_osc/grid_display_m0/timing_gen_xy_m0/i_data_d1_reg[12]' (FD) to 'top_oscilloscope/my_osc/grid_display_m0/timing_gen_xy_m0/i_data_d1_reg[14]'
+INFO: [Synth 8-3886] merging instance 'top_oscilloscope/my_osc/grid_display_m0/timing_gen_xy_m0/i_data_d1_reg[13]' (FD) to 'top_oscilloscope/my_osc/grid_display_m0/timing_gen_xy_m0/i_data_d1_reg[14]'
+INFO: [Synth 8-3886] merging instance 'top_oscilloscope/my_osc/grid_display_m0/timing_gen_xy_m0/i_data_d1_reg[14]' (FD) to 'top_oscilloscope/my_osc/grid_display_m0/timing_gen_xy_m0/i_data_d1_reg[15]'
+INFO: [Synth 8-3886] merging instance 'top_oscilloscope/my_osc/grid_display_m0/timing_gen_xy_m0/i_data_d1_reg[20]' (FD) to 'top_oscilloscope/my_osc/grid_display_m0/timing_gen_xy_m0/i_data_d1_reg[22]'
+INFO: [Synth 8-3886] merging instance 'top_oscilloscope/my_osc/grid_display_m0/timing_gen_xy_m0/i_data_d1_reg[21]' (FD) to 'top_oscilloscope/my_osc/grid_display_m0/timing_gen_xy_m0/i_data_d1_reg[22]'
+INFO: [Synth 8-3886] merging instance 'top_oscilloscope/my_osc/grid_display_m0/timing_gen_xy_m0/i_data_d1_reg[22]' (FD) to 'top_oscilloscope/my_osc/grid_display_m0/timing_gen_xy_m0/i_data_d1_reg[23]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (top_oscilloscope/my_value/\cnt_times_reg[0] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (top_oscilloscope/my_value/\cnt_times_reg[1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (top_oscilloscope/my_value/\cnt_times_reg[2] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (top_oscilloscope/my_value/\cnt_times_reg[3] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (top_oscilloscope/my_value/\cnt_times_reg[4] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (top_oscilloscope/my_value/\cnt_times_reg[5] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (top_oscilloscope/my_value/\cnt_times_reg[6] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (top_oscilloscope/my_value/\cnt_times_reg[7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (top_oscilloscope/my_value/\cnt_times_reg[8] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (top_oscilloscope/my_value/\cnt_times_reg[9] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (top_oscilloscope/my_value/\cnt_times_reg[10] )
+INFO: [Synth 8-3886] merging instance 'top_oscilloscope/my_osc/ad9226_sample_m0/cnt_reg[15]' (FDCP) to 'top_oscilloscope/my_osc/ad9226_sample_m0/cnt_reg[16]'
+INFO: [Synth 8-3886] merging instance 'top_oscilloscope/my_osc/ad9226_sample_m0/cnt_reg[16]' (FDCP) to 'top_oscilloscope/my_osc/ad9226_sample_m0/cnt_reg[17]'
+INFO: [Synth 8-3886] merging instance 'top_oscilloscope/my_osc/ad9226_sample_m0/cnt_reg[17]' (FDCP) to 'top_oscilloscope/my_osc/ad9226_sample_m0/cnt_reg[18]'
+INFO: [Synth 8-3886] merging instance 'top_oscilloscope/my_osc/ad9226_sample_m0/cnt_reg[18]' (FDCP) to 'top_oscilloscope/my_osc/ad9226_sample_m0/cnt_reg[19]'
+INFO: [Synth 8-3886] merging instance 'top_oscilloscope/my_osc/ad9226_sample_m0/cnt_reg[19]' (FDCP) to 'top_oscilloscope/my_osc/ad9226_sample_m0/cnt_reg[20]'
+INFO: [Synth 8-3886] merging instance 'top_oscilloscope/my_osc/grid_display_m0/v_data_reg[5]' (FD) to 'top_oscilloscope/my_osc/grid_display_m0/v_data_reg[6]'
+INFO: [Synth 8-3886] merging instance 'top_oscilloscope/my_osc/grid_display_m0/v_data_reg[6]' (FD) to 'top_oscilloscope/my_osc/grid_display_m0/v_data_reg[7]'
+INFO: [Synth 8-3886] merging instance 'top_oscilloscope/my_osc/grid_display_m0/v_data_reg[12]' (FD) to 'top_oscilloscope/my_osc/grid_display_m0/v_data_reg[13]'
+INFO: [Synth 8-3886] merging instance 'top_oscilloscope/my_osc/grid_display_m0/v_data_reg[13]' (FD) to 'top_oscilloscope/my_osc/grid_display_m0/v_data_reg[14]'
+INFO: [Synth 8-3886] merging instance 'top_oscilloscope/my_osc/grid_display_m0/v_data_reg[20]' (FD) to 'top_oscilloscope/my_osc/grid_display_m0/v_data_reg[21]'
+INFO: [Synth 8-3886] merging instance 'top_oscilloscope/my_osc/grid_display_m0/v_data_reg[21]' (FD) to 'top_oscilloscope/my_osc/grid_display_m0/v_data_reg[22]'
+INFO: [Synth 8-3886] merging instance 'top_oscilloscope/my_osc/wav_display_m0/timing_gen_xy_m0/i_data_d0_reg[5]' (FD) to 'top_oscilloscope/my_osc/wav_display_m0/timing_gen_xy_m0/i_data_d0_reg[6]'
+INFO: [Synth 8-3886] merging instance 'top_oscilloscope/my_osc/wav_display_m0/timing_gen_xy_m0/i_data_d0_reg[6]' (FD) to 'top_oscilloscope/my_osc/wav_display_m0/timing_gen_xy_m0/i_data_d0_reg[7]'
+INFO: [Synth 8-3886] merging instance 'top_oscilloscope/my_osc/wav_display_m0/timing_gen_xy_m0/i_data_d0_reg[12]' (FD) to 'top_oscilloscope/my_osc/wav_display_m0/timing_gen_xy_m0/i_data_d0_reg[13]'
+INFO: [Synth 8-3886] merging instance 'top_oscilloscope/my_osc/wav_display_m0/timing_gen_xy_m0/i_data_d0_reg[13]' (FD) to 'top_oscilloscope/my_osc/wav_display_m0/timing_gen_xy_m0/i_data_d0_reg[14]'
+INFO: [Synth 8-3886] merging instance 'top_oscilloscope/my_osc/wav_display_m0/timing_gen_xy_m0/i_data_d0_reg[20]' (FD) to 'top_oscilloscope/my_osc/wav_display_m0/timing_gen_xy_m0/i_data_d0_reg[21]'
+INFO: [Synth 8-3886] merging instance 'top_oscilloscope/my_osc/wav_display_m0/timing_gen_xy_m0/i_data_d0_reg[21]' (FD) to 'top_oscilloscope/my_osc/wav_display_m0/timing_gen_xy_m0/i_data_d0_reg[22]'
+INFO: [Synth 8-3886] merging instance 'top_oscilloscope/my_osc/wav_display_m0/timing_gen_xy_m0/i_data_d1_reg[5]' (FD) to 'top_oscilloscope/my_osc/wav_display_m0/timing_gen_xy_m0/i_data_d1_reg[6]'
+INFO: [Synth 8-3886] merging instance 'top_oscilloscope/my_osc/wav_display_m0/timing_gen_xy_m0/i_data_d1_reg[6]' (FD) to 'top_oscilloscope/my_osc/wav_display_m0/timing_gen_xy_m0/i_data_d1_reg[7]'
+INFO: [Synth 8-3886] merging instance 'top_oscilloscope/my_osc/wav_display_m0/timing_gen_xy_m0/i_data_d1_reg[12]' (FD) to 'top_oscilloscope/my_osc/wav_display_m0/timing_gen_xy_m0/i_data_d1_reg[13]'
+INFO: [Synth 8-3886] merging instance 'top_oscilloscope/my_osc/wav_display_m0/timing_gen_xy_m0/i_data_d1_reg[13]' (FD) to 'top_oscilloscope/my_osc/wav_display_m0/timing_gen_xy_m0/i_data_d1_reg[14]'
+INFO: [Synth 8-3886] merging instance 'top_oscilloscope/my_osc/wav_display_m0/timing_gen_xy_m0/i_data_d1_reg[20]' (FD) to 'top_oscilloscope/my_osc/wav_display_m0/timing_gen_xy_m0/i_data_d1_reg[21]'
+INFO: [Synth 8-3886] merging instance 'top_oscilloscope/my_osc/wav_display_m0/timing_gen_xy_m0/i_data_d1_reg[21]' (FD) to 'top_oscilloscope/my_osc/wav_display_m0/timing_gen_xy_m0/i_data_d1_reg[22]'
+INFO: [Synth 8-3886] merging instance 'top_oscilloscope/my_osc/wav_display_m0/v_data_reg[5]' (FD) to 'top_oscilloscope/my_osc/wav_display_m0/v_data_reg[6]'
+INFO: [Synth 8-3886] merging instance 'top_oscilloscope/my_osc/wav_display_m0/v_data_reg[6]' (FD) to 'top_oscilloscope/my_osc/wav_display_m0/v_data_reg[7]'
+INFO: [Synth 8-3886] merging instance 'top_oscilloscope/my_osc/wav_display_m0/v_data_reg[12]' (FD) to 'top_oscilloscope/my_osc/wav_display_m0/v_data_reg[13]'
+INFO: [Synth 8-3886] merging instance 'top_oscilloscope/my_osc/wav_display_m0/v_data_reg[13]' (FD) to 'top_oscilloscope/my_osc/wav_display_m0/v_data_reg[14]'
+INFO: [Synth 8-3886] merging instance 'top_oscilloscope/my_osc/wav_display_m0/v_data_reg[20]' (FD) to 'top_oscilloscope/my_osc/wav_display_m0/v_data_reg[21]'
+INFO: [Synth 8-3886] merging instance 'top_oscilloscope/my_osc/wav_display_m0/v_data_reg[21]' (FD) to 'top_oscilloscope/my_osc/wav_display_m0/v_data_reg[22]'
+WARNING: [Synth 8-3332] Sequential element (cnt_times_reg[10]) is unused and will be removed from module value.
+WARNING: [Synth 8-3332] Sequential element (cnt_times_reg[9]) is unused and will be removed from module value.
+WARNING: [Synth 8-3332] Sequential element (cnt_times_reg[8]) is unused and will be removed from module value.
+WARNING: [Synth 8-3332] Sequential element (cnt_times_reg[7]) is unused and will be removed from module value.
+WARNING: [Synth 8-3332] Sequential element (cnt_times_reg[6]) is unused and will be removed from module value.
+WARNING: [Synth 8-3332] Sequential element (cnt_times_reg[5]) is unused and will be removed from module value.
+WARNING: [Synth 8-3332] Sequential element (cnt_times_reg[4]) is unused and will be removed from module value.
+WARNING: [Synth 8-3332] Sequential element (cnt_times_reg[3]) is unused and will be removed from module value.
+WARNING: [Synth 8-3332] Sequential element (cnt_times_reg[2]) is unused and will be removed from module value.
+WARNING: [Synth 8-3332] Sequential element (cnt_times_reg[1]) is unused and will be removed from module value.
+WARNING: [Synth 8-3332] Sequential element (cnt_times_reg[0]) is unused and will be removed from module value.
+WARNING: [Synth 8-3332] Sequential element (ad1_d_r_reg[1]) is unused and will be removed from module plj.
+WARNING: [Synth 8-3332] Sequential element (ad9226_sample_m0/freq1_reg[0]) is unused and will be removed from module osc.
+WARNING: [Synth 8-3332] Sequential element (color_bar_m0/rgb_b_reg_reg[3]) is unused and will be removed from module osc.
+WARNING: [Synth 8-3332] Sequential element (color_bar_m0/rgb_b_reg_reg[2]) is unused and will be removed from module osc.
+WARNING: [Synth 8-3332] Sequential element (color_bar_m0/rgb_b_reg_reg[1]) is unused and will be removed from module osc.
+WARNING: [Synth 8-3332] Sequential element (color_bar_m0/rgb_b_reg_reg[0]) is unused and will be removed from module osc.
+WARNING: [Synth 8-3332] Sequential element (color_bar_m0/rgb_g_reg_reg[3]) is unused and will be removed from module osc.
+WARNING: [Synth 8-3332] Sequential element (color_bar_m0/rgb_g_reg_reg[2]) is unused and will be removed from module osc.
+WARNING: [Synth 8-3332] Sequential element (color_bar_m0/rgb_g_reg_reg[1]) is unused and will be removed from module osc.
+WARNING: [Synth 8-3332] Sequential element (color_bar_m0/rgb_g_reg_reg[0]) is unused and will be removed from module osc.
+WARNING: [Synth 8-3332] Sequential element (color_bar_m0/rgb_r_reg_reg[3]) is unused and will be removed from module osc.
+WARNING: [Synth 8-3332] Sequential element (color_bar_m0/rgb_r_reg_reg[2]) is unused and will be removed from module osc.
+WARNING: [Synth 8-3332] Sequential element (color_bar_m0/rgb_r_reg_reg[1]) is unused and will be removed from module osc.
+WARNING: [Synth 8-3332] Sequential element (color_bar_m0/rgb_r_reg_reg[0]) is unused and will be removed from module osc.
+WARNING: [Synth 8-3332] Sequential element (grid_display_m0/timing_gen_xy_m0/i_data_d0_reg[19]) is unused and will be removed from module osc.
+WARNING: [Synth 8-3332] Sequential element (grid_display_m0/timing_gen_xy_m0/i_data_d0_reg[18]) is unused and will be removed from module osc.
+WARNING: [Synth 8-3332] Sequential element (grid_display_m0/timing_gen_xy_m0/i_data_d0_reg[17]) is unused and will be removed from module osc.
+WARNING: [Synth 8-3332] Sequential element (grid_display_m0/timing_gen_xy_m0/i_data_d0_reg[16]) is unused and will be removed from module osc.
+WARNING: [Synth 8-3332] Sequential element (grid_display_m0/timing_gen_xy_m0/i_data_d0_reg[11]) is unused and will be removed from module osc.
+WARNING: [Synth 8-3332] Sequential element (grid_display_m0/timing_gen_xy_m0/i_data_d0_reg[10]) is unused and will be removed from module osc.
+WARNING: [Synth 8-3332] Sequential element (grid_display_m0/timing_gen_xy_m0/i_data_d0_reg[9]) is unused and will be removed from module osc.
+WARNING: [Synth 8-3332] Sequential element (grid_display_m0/timing_gen_xy_m0/i_data_d0_reg[8]) is unused and will be removed from module osc.
+WARNING: [Synth 8-3332] Sequential element (grid_display_m0/timing_gen_xy_m0/i_data_d0_reg[3]) is unused and will be removed from module osc.
+WARNING: [Synth 8-3332] Sequential element (grid_display_m0/timing_gen_xy_m0/i_data_d0_reg[2]) is unused and will be removed from module osc.
+WARNING: [Synth 8-3332] Sequential element (grid_display_m0/timing_gen_xy_m0/i_data_d0_reg[1]) is unused and will be removed from module osc.
+WARNING: [Synth 8-3332] Sequential element (grid_display_m0/timing_gen_xy_m0/i_data_d0_reg[0]) is unused and will be removed from module osc.
+WARNING: [Synth 8-3332] Sequential element (grid_display_m0/timing_gen_xy_m0/i_data_d1_reg[19]) is unused and will be removed from module osc.
+WARNING: [Synth 8-3332] Sequential element (grid_display_m0/timing_gen_xy_m0/i_data_d1_reg[18]) is unused and will be removed from module osc.
+WARNING: [Synth 8-3332] Sequential element (grid_display_m0/timing_gen_xy_m0/i_data_d1_reg[17]) is unused and will be removed from module osc.
+WARNING: [Synth 8-3332] Sequential element (grid_display_m0/timing_gen_xy_m0/i_data_d1_reg[16]) is unused and will be removed from module osc.
+WARNING: [Synth 8-3332] Sequential element (grid_display_m0/timing_gen_xy_m0/i_data_d1_reg[11]) is unused and will be removed from module osc.
+WARNING: [Synth 8-3332] Sequential element (grid_display_m0/timing_gen_xy_m0/i_data_d1_reg[10]) is unused and will be removed from module osc.
+WARNING: [Synth 8-3332] Sequential element (grid_display_m0/timing_gen_xy_m0/i_data_d1_reg[9]) is unused and will be removed from module osc.
+WARNING: [Synth 8-3332] Sequential element (grid_display_m0/timing_gen_xy_m0/i_data_d1_reg[8]) is unused and will be removed from module osc.
+WARNING: [Synth 8-3332] Sequential element (grid_display_m0/timing_gen_xy_m0/i_data_d1_reg[3]) is unused and will be removed from module osc.
+WARNING: [Synth 8-3332] Sequential element (grid_display_m0/timing_gen_xy_m0/i_data_d1_reg[2]) is unused and will be removed from module osc.
+WARNING: [Synth 8-3332] Sequential element (grid_display_m0/timing_gen_xy_m0/i_data_d1_reg[1]) is unused and will be removed from module osc.
+WARNING: [Synth 8-3332] Sequential element (grid_display_m0/timing_gen_xy_m0/i_data_d1_reg[0]) is unused and will be removed from module osc.
+WARNING: [Synth 8-3332] Sequential element (grid_display_m0/v_data_reg[19]) is unused and will be removed from module osc.
+WARNING: [Synth 8-3332] Sequential element (grid_display_m0/v_data_reg[18]) is unused and will be removed from module osc.
+WARNING: [Synth 8-3332] Sequential element (grid_display_m0/v_data_reg[17]) is unused and will be removed from module osc.
+WARNING: [Synth 8-3332] Sequential element (grid_display_m0/v_data_reg[16]) is unused and will be removed from module osc.
+WARNING: [Synth 8-3332] Sequential element (grid_display_m0/v_data_reg[11]) is unused and will be removed from module osc.
+WARNING: [Synth 8-3332] Sequential element (grid_display_m0/v_data_reg[10]) is unused and will be removed from module osc.
+WARNING: [Synth 8-3332] Sequential element (grid_display_m0/v_data_reg[9]) is unused and will be removed from module osc.
+WARNING: [Synth 8-3332] Sequential element (grid_display_m0/v_data_reg[8]) is unused and will be removed from module osc.
+WARNING: [Synth 8-3332] Sequential element (grid_display_m0/v_data_reg[3]) is unused and will be removed from module osc.
+WARNING: [Synth 8-3332] Sequential element (grid_display_m0/v_data_reg[2]) is unused and will be removed from module osc.
+WARNING: [Synth 8-3332] Sequential element (grid_display_m0/v_data_reg[1]) is unused and will be removed from module osc.
+WARNING: [Synth 8-3332] Sequential element (grid_display_m0/v_data_reg[0]) is unused and will be removed from module osc.
+WARNING: [Synth 8-3332] Sequential element (wav_display_m0/timing_gen_xy_m0/i_data_d0_reg[19]) is unused and will be removed from module osc.
+WARNING: [Synth 8-3332] Sequential element (wav_display_m0/timing_gen_xy_m0/i_data_d0_reg[18]) is unused and will be removed from module osc.
+WARNING: [Synth 8-3332] Sequential element (wav_display_m0/timing_gen_xy_m0/i_data_d0_reg[17]) is unused and will be removed from module osc.
+WARNING: [Synth 8-3332] Sequential element (wav_display_m0/timing_gen_xy_m0/i_data_d0_reg[16]) is unused and will be removed from module osc.
+WARNING: [Synth 8-3332] Sequential element (wav_display_m0/timing_gen_xy_m0/i_data_d0_reg[11]) is unused and will be removed from module osc.
+WARNING: [Synth 8-3332] Sequential element (wav_display_m0/timing_gen_xy_m0/i_data_d0_reg[10]) is unused and will be removed from module osc.
+WARNING: [Synth 8-3332] Sequential element (wav_display_m0/timing_gen_xy_m0/i_data_d0_reg[9]) is unused and will be removed from module osc.
+WARNING: [Synth 8-3332] Sequential element (wav_display_m0/timing_gen_xy_m0/i_data_d0_reg[8]) is unused and will be removed from module osc.
+WARNING: [Synth 8-3332] Sequential element (wav_display_m0/timing_gen_xy_m0/i_data_d0_reg[3]) is unused and will be removed from module osc.
+WARNING: [Synth 8-3332] Sequential element (wav_display_m0/timing_gen_xy_m0/i_data_d0_reg[2]) is unused and will be removed from module osc.
+WARNING: [Synth 8-3332] Sequential element (wav_display_m0/timing_gen_xy_m0/i_data_d0_reg[1]) is unused and will be removed from module osc.
+WARNING: [Synth 8-3332] Sequential element (wav_display_m0/timing_gen_xy_m0/i_data_d0_reg[0]) is unused and will be removed from module osc.
+WARNING: [Synth 8-3332] Sequential element (wav_display_m0/timing_gen_xy_m0/i_data_d1_reg[19]) is unused and will be removed from module osc.
+WARNING: [Synth 8-3332] Sequential element (wav_display_m0/timing_gen_xy_m0/i_data_d1_reg[18]) is unused and will be removed from module osc.
+WARNING: [Synth 8-3332] Sequential element (wav_display_m0/timing_gen_xy_m0/i_data_d1_reg[17]) is unused and will be removed from module osc.
+WARNING: [Synth 8-3332] Sequential element (wav_display_m0/timing_gen_xy_m0/i_data_d1_reg[16]) is unused and will be removed from module osc.
+WARNING: [Synth 8-3332] Sequential element (wav_display_m0/timing_gen_xy_m0/i_data_d1_reg[11]) is unused and will be removed from module osc.
+WARNING: [Synth 8-3332] Sequential element (wav_display_m0/timing_gen_xy_m0/i_data_d1_reg[10]) is unused and will be removed from module osc.
+WARNING: [Synth 8-3332] Sequential element (wav_display_m0/timing_gen_xy_m0/i_data_d1_reg[9]) is unused and will be removed from module osc.
+WARNING: [Synth 8-3332] Sequential element (wav_display_m0/timing_gen_xy_m0/i_data_d1_reg[8]) is unused and will be removed from module osc.
+WARNING: [Synth 8-3332] Sequential element (wav_display_m0/timing_gen_xy_m0/i_data_d1_reg[3]) is unused and will be removed from module osc.
+WARNING: [Synth 8-3332] Sequential element (wav_display_m0/timing_gen_xy_m0/i_data_d1_reg[2]) is unused and will be removed from module osc.
+WARNING: [Synth 8-3332] Sequential element (wav_display_m0/timing_gen_xy_m0/i_data_d1_reg[1]) is unused and will be removed from module osc.
+WARNING: [Synth 8-3332] Sequential element (wav_display_m0/timing_gen_xy_m0/i_data_d1_reg[0]) is unused and will be removed from module osc.
+WARNING: [Synth 8-3332] Sequential element (wav_display_m0/v_data_reg[19]) is unused and will be removed from module osc.
+WARNING: [Synth 8-3332] Sequential element (wav_display_m0/v_data_reg[18]) is unused and will be removed from module osc.
+WARNING: [Synth 8-3332] Sequential element (wav_display_m0/v_data_reg[17]) is unused and will be removed from module osc.
+WARNING: [Synth 8-3332] Sequential element (wav_display_m0/v_data_reg[16]) is unused and will be removed from module osc.
+WARNING: [Synth 8-3332] Sequential element (wav_display_m0/v_data_reg[11]) is unused and will be removed from module osc.
+WARNING: [Synth 8-3332] Sequential element (wav_display_m0/v_data_reg[10]) is unused and will be removed from module osc.
+WARNING: [Synth 8-3332] Sequential element (wav_display_m0/v_data_reg[9]) is unused and will be removed from module osc.
+WARNING: [Synth 8-3332] Sequential element (wav_display_m0/v_data_reg[8]) is unused and will be removed from module osc.
+WARNING: [Synth 8-3332] Sequential element (wav_display_m0/v_data_reg[3]) is unused and will be removed from module osc.
+WARNING: [Synth 8-3332] Sequential element (wav_display_m0/v_data_reg[2]) is unused and will be removed from module osc.
+WARNING: [Synth 8-3332] Sequential element (wav_display_m0/v_data_reg[1]) is unused and will be removed from module osc.
+WARNING: [Synth 8-3332] Sequential element (wav_display_m0/v_data_reg[0]) is unused and will be removed from module osc.
+INFO: [Synth 8-3886] merging instance 'i_3/seg_top/seg_scan_m0/scan_timer_reg[26]' (FDC) to 'i_3/seg_top/seg_scan_m0/scan_timer_reg[17]'
+INFO: [Synth 8-3886] merging instance 'i_3/seg_top/seg_scan_m0/scan_timer_reg[25]' (FDC) to 'i_3/seg_top/seg_scan_m0/scan_timer_reg[17]'
+INFO: [Synth 8-3886] merging instance 'i_3/seg_top/seg_scan_m0/scan_timer_reg[24]' (FDC) to 'i_3/seg_top/seg_scan_m0/scan_timer_reg[17]'
+INFO: [Synth 8-3886] merging instance 'i_3/seg_top/seg_scan_m0/scan_timer_reg[30]' (FDC) to 'i_3/seg_top/seg_scan_m0/scan_timer_reg[17]'
+INFO: [Synth 8-3886] merging instance 'i_3/seg_top/seg_scan_m0/scan_timer_reg[19]' (FDC) to 'i_3/seg_top/seg_scan_m0/scan_timer_reg[17]'
+INFO: [Synth 8-3886] merging instance 'i_3/seg_top/seg_scan_m0/scan_timer_reg[23]' (FDC) to 'i_3/seg_top/seg_scan_m0/scan_timer_reg[17]'
+INFO: [Synth 8-3886] merging instance 'i_3/seg_top/seg_scan_m0/scan_timer_reg[22]' (FDC) to 'i_3/seg_top/seg_scan_m0/scan_timer_reg[17]'
+INFO: [Synth 8-3886] merging instance 'i_3/seg_top/seg_scan_m0/scan_timer_reg[20]' (FDC) to 'i_3/seg_top/seg_scan_m0/scan_timer_reg[17]'
+INFO: [Synth 8-3886] merging instance 'i_3/seg_top/seg_scan_m0/scan_timer_reg[18]' (FDC) to 'i_3/seg_top/seg_scan_m0/scan_timer_reg[17]'
+INFO: [Synth 8-3886] merging instance 'i_3/seg_top/seg_scan_m0/scan_timer_reg[21]' (FDC) to 'i_3/seg_top/seg_scan_m0/scan_timer_reg[17]'
+INFO: [Synth 8-3886] merging instance 'i_3/seg_top/seg_scan_m0/scan_timer_reg[17]' (FDC) to 'i_3/seg_top/seg_scan_m0/scan_timer_reg[27]'
+INFO: [Synth 8-3886] merging instance 'i_3/seg_top/seg_scan_m0/scan_timer_reg[29]' (FDC) to 'i_3/seg_top/seg_scan_m0/scan_timer_reg[27]'
+INFO: [Synth 8-3886] merging instance 'i_3/seg_top/seg_scan_m0/scan_timer_reg[28]' (FDC) to 'i_3/seg_top/seg_scan_m0/scan_timer_reg[27]'
+INFO: [Synth 8-3886] merging instance 'i_3/seg_top/seg_scan_m0/scan_timer_reg[27]' (FDC) to 'i_3/seg_top/seg_scan_m0/scan_timer_reg[31]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_3/\seg_top/seg_scan_m0/scan_timer_reg[31] )
+WARNING: [Synth 8-3332] Sequential element (ad9226_sample_m0/sample_cnt_reg[10]) is unused and will be removed from module osc.
+WARNING: [Synth 8-3332] Sequential element (seg_top/seg_scan_m0/scan_timer_reg[31]) is unused and will be removed from module GAODA.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:40 ; elapsed = 00:01:05 . Memory (MB): peak = 765.410 ; gain = 509.551
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+DSP: Preliminary Mapping  Report (see note below)
++------------+--------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|Module Name | DSP Mapping  | A Size | B Size | C Size | D Size | P Size | AREG | BREG | CREG | DREG | ADREG | MREG | PREG | 
++------------+--------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|conv        | (A:0x2710)*B | 11     | 14     | -      | -      | 25     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|conv        | (A:0x2710)*B | 11     | 14     | -      | -      | 25     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|conv        | (A:0x2710)*B | 11     | 14     | -      | -      | 25     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|conv        | (A:0x2710)*B | 11     | 14     | -      | -      | 25     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|conv        | (A:0x2710)*B | 12     | 14     | -      | -      | 26     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|dds         | A*(B:0x158)  | 24     | 9      | -      | -      | 33     | 0    | 0    | -    | -    | -     | 0    | 0    | 
++------------+--------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+
+Note: The table above is a preliminary report that shows the DSPs inferred at the current stage of the synthesis flow. Some DSP may be reimplemented as non DSP primitives later in the synthesis flow. Multiple instantiated DSPs are reported only once.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5578] Moved timing constraint from pin 'top_oscilloscope/pll_m0/clk_out1' to pin 'top_oscilloscope/pll_m0/bbstub_clk_out1/O'
+INFO: [Synth 8-5578] Moved timing constraint from pin 'top_oscilloscope/pll_m0/clk_out2' to pin 'top_oscilloscope/pll_m0/bbstub_clk_out2/O'
+INFO: [Synth 8-5819] Moved 2 constraints on hierarchical pins to their respective driving/loading pins
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:55 ; elapsed = 00:01:22 . Memory (MB): peak = 867.496 ; gain = 611.637
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:59 ; elapsed = 00:01:26 . Memory (MB): peak = 931.531 ; gain = 675.672
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [C:/Users/feiya/Desktop/GAODA/GAODA/value.srcs/sources_1/DDS/dds.v:28]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [C:/Users/feiya/Desktop/GAODA/GAODA/value.srcs/sources_1/OSILLISCOPE/top_value.v:92]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [C:/Users/feiya/Desktop/GAODA/GAODA/value.srcs/sources_1/OSILLISCOPE/top_value.v:93]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [C:/Users/feiya/Desktop/GAODA/GAODA/value.srcs/sources_1/OSILLISCOPE/top_value.v:94]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [C:/Users/feiya/Desktop/GAODA/GAODA/value.srcs/sources_1/DDS/freq_control.v:62]
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:01:02 ; elapsed = 00:01:31 . Memory (MB): peak = 962.586 ; gain = 706.727
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:01:03 ; elapsed = 00:01:33 . Memory (MB): peak = 962.586 ; gain = 706.727
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:01:03 ; elapsed = 00:01:33 . Memory (MB): peak = 962.586 ; gain = 706.727
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:04 ; elapsed = 00:01:34 . Memory (MB): peak = 962.586 ; gain = 706.727
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:01:04 ; elapsed = 00:01:34 . Memory (MB): peak = 962.586 ; gain = 706.727
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:01:04 ; elapsed = 00:01:34 . Memory (MB): peak = 962.586 ; gain = 706.727
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:01:04 ; elapsed = 00:01:34 . Memory (MB): peak = 962.586 ; gain = 706.727
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Static Shift Register Report:
++------------+---------------------------------------------------------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+|Module Name | RTL Name                                                                  | Length | Width | Reset Signal | Pull out first Reg | Pull out last Reg | SRL16E | SRLC32E | 
++------------+---------------------------------------------------------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+|GAODA       | top_oscilloscope/my_osc/wav_display_m0/timing_gen_xy_m0/hs_d1_reg         | 4      | 1     | NO           | NO                 | YES               | 1      | 0       | 
+|GAODA       | top_oscilloscope/my_osc/wav_display_m0/timing_gen_xy_m0/i_data_d1_reg[23] | 3      | 2     | NO           | NO                 | YES               | 2      | 0       | 
+|GAODA       | top_oscilloscope/my_osc/wav_display_m0/timing_gen_xy_m0/i_data_d1_reg[15] | 3      | 4     | NO           | NO                 | NO                | 4      | 0       | 
++------------+---------------------------------------------------------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++------+--------------+----------+
+|      |BlackBox name |Instances |
++------+--------------+----------+
+|1     |sin_rom       |         1|
+|2     |square_rom    |         1|
+|3     |saw_rom       |         1|
+|4     |tri_rom       |         1|
+|5     |clk_wiz_0     |         1|
+|6     |blk_mem_gen_0 |         1|
++------+--------------+----------+
+
+Report Cell Usage: 
++------+--------------+------+
+|      |Cell          |Count |
++------+--------------+------+
+|1     |blk_mem_gen_0 |     1|
+|2     |clk_wiz_0     |     1|
+|3     |saw_rom       |     1|
+|4     |sin_rom       |     1|
+|5     |square_rom    |     1|
+|6     |tri_rom       |     1|
+|7     |BUFG          |     2|
+|8     |CARRY4        |   962|
+|9     |DSP48E1       |     6|
+|10    |LUT1          |   380|
+|11    |LUT2          |  1589|
+|12    |LUT3          |  1489|
+|13    |LUT4          |   461|
+|14    |LUT5          |   569|
+|15    |LUT6          |   926|
+|16    |MUXF7         |    53|
+|17    |MUXF8         |     8|
+|18    |SRL16E        |     7|
+|19    |FDCE          |   857|
+|20    |FDPE          |    60|
+|21    |FDRE          |    78|
+|22    |LDC           |    38|
+|23    |IBUF          |    26|
+|24    |OBUF          |    54|
++------+--------------+------+
+
+Report Instance Areas: 
++------+--------------------------+-----------------+------+
+|      |Instance                  |Module           |Cells |
++------+--------------------------+-----------------+------+
+|1     |top                       |                 |  7615|
+|2     |  seg_top                 |seg_top          |   146|
+|3     |    seg_scan_m0           |seg_scan         |   146|
+|4     |  top_key_sw_dds          |top_key_sw_dds   |   995|
+|5     |    amp_adj               |amp_adj          |    41|
+|6     |    dds                   |dds              |   183|
+|7     |    freq_control          |freq_control     |   598|
+|8     |      bin_to_bcd_inst     |bin_to_bcd       |   230|
+|9     |    key_process           |key_process      |   171|
+|10    |      key_freq_down_inst1 |key_debounce     |    78|
+|11    |      key_freq_up_inst    |key_debounce_1   |    93|
+|12    |    wave_sel              |wave_sel         |     2|
+|13    |  top_oscilloscope        |top_oscilloscope |  5689|
+|14    |    my_osc                |osc              |  1255|
+|15    |      ad9226_sample_m0    |ad9226_sample    |   880|
+|16    |      color_bar_m0        |color_bar        |   115|
+|17    |      grid_display_m0     |grid_display     |   116|
+|18    |        timing_gen_xy_m0  |timing_gen_xy_0  |    94|
+|19    |      wav_display_m0      |wav_display      |   144|
+|20    |        timing_gen_xy_m0  |timing_gen_xy    |    99|
+|21    |    my_plj                |plj              |   314|
+|22    |    my_value              |value            |  1913|
+|23    |    myconv                |conv             |  2205|
++------+--------------------------+-----------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:01:04 ; elapsed = 00:01:34 . Memory (MB): peak = 962.586 ; gain = 706.727
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 133 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:50 ; elapsed = 00:01:09 . Memory (MB): peak = 962.586 ; gain = 354.461
+Synthesis Optimization Complete : Time (s): cpu = 00:01:05 ; elapsed = 00:01:35 . Memory (MB): peak = 962.586 ; gain = 706.727
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 1093 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-140] Inserted 1 IBUFs to IO ports without IO buffers.
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 38 instances were transformed.
+  LDC => LDCE: 38 instances
+
+INFO: [Common 17-83] Releasing license: Synthesis
+202 Infos, 148 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:01:09 ; elapsed = 00:01:47 . Memory (MB): peak = 962.586 ; gain = 718.195
+INFO: [Common 17-1381] The checkpoint 'C:/Users/feiya/Desktop/GAODA/GAODA/value.runs/synth_1/GAODA.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file GAODA_utilization_synth.rpt -pb GAODA_utilization_synth.pb
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:02 . Memory (MB): peak = 962.586 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Sat Nov 23 14:21:12 2019...

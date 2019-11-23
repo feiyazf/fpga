@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="tri_rom_synth_1" LaunchPart="xc7a35tcsg324-1" LaunchTime="1574394353">
+  <File Type="PA-TCL" Name="tri_rom.tcl"/>
+  <File Type="REPORTS-TCL" Name="tri_rom_reports.tcl"/>
+  <File Type="RDS-RDS" Name="tri_rom.vds"/>
+  <File Type="RDS-UTIL" Name="tri_rom_utilization_synth.rpt"/>
+  <File Type="RDS-UTIL-PB" Name="tri_rom_utilization_synth.pb"/>
+  <File Type="RDS-DCP" Name="tri_rom.dcp"/>
+  <FileSet Name="sources" Type="BlockSrcs" RelSrcDir="$PSRCDIR/tri_rom">
+    <File Path="$PSRCDIR/sources_1/ip/tri_rom/tri_rom.xci">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="TopModule" Val="tri_rom"/>
+      <Option Name="UseBlackboxStub" Val="1"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="constrs_in" Type="BlockSrcs" RelSrcDir="$PSRCDIR/tri_rom">
+    <File Path="$PSRCDIR/sources_1/ip/tri_rom/tri_rom.xci">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="TopModule" Val="tri_rom"/>
+      <Option Name="UseBlackboxStub" Val="1"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2017"/>
+    <Step Id="synth_design"/>
+  </Strategy>
+</GenRun>

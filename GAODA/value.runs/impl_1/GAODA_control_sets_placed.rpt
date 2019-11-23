@@ -1,0 +1,221 @@
+Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2017.4 (win64) Build 2086221 Fri Dec 15 20:55:39 MST 2017
+| Date         : Sat Nov 23 14:23:14 2019
+| Host         : LAPTOP-3V9NHDMK running 64-bit major release  (build 9200)
+| Command      : report_control_sets -verbose -file GAODA_control_sets_placed.rpt
+| Design       : GAODA
+| Device       : xc7a35t
+------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Flip-Flop Distribution
+3. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Number of unique control sets                            |   153 |
+| Unused register locations in slices containing registers |   928 |
++----------------------------------------------------------+-------+
+
+
+2. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |              58 |           29 |
+| No           | No                    | Yes                    |             427 |          195 |
+| No           | Yes                   | No                     |              73 |           49 |
+| Yes          | No                    | No                     |               0 |            0 |
+| Yes          | No                    | Yes                    |             490 |          186 |
+| Yes          | Yes                   | No                     |               0 |            0 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+3. Detailed Control Set Information
+-----------------------------------
+
++-----------------------------------------------------------------------+-----------------------------------------------------------------------------+-------------------------------------------------------------------------+------------------+----------------+
+|                              Clock Signal                             |                                Enable Signal                                |                             Set/Reset Signal                            | Slice Load Count | Bel Load Count |
++-----------------------------------------------------------------------+-----------------------------------------------------------------------------+-------------------------------------------------------------------------+------------------+----------------+
+|  top_oscilloscope/my_osc/ad9226_sample_m0/cnt_reg[11]_LDC_i_1_n_0     |                                                                             | top_oscilloscope/my_osc/ad9226_sample_m0/cnt_reg[11]_LDC_i_2_n_0        |                1 |              1 |
+|  top_oscilloscope/my_osc/ad9226_sample_m0/cnt_reg[12]_LDC_i_1_n_0     |                                                                             | top_oscilloscope/my_osc/ad9226_sample_m0/cnt_reg[12]_LDC_i_2_n_0        |                1 |              1 |
+|  top_oscilloscope/my_osc/ad9226_sample_m0/cnt_reg[0]_LDC_i_1_n_0      |                                                                             | top_oscilloscope/my_osc/ad9226_sample_m0/cnt_reg[0]_LDC_i_2_n_0         |                1 |              1 |
+|  top_oscilloscope/my_osc/ad9226_sample_m0/cnt_reg[10]_LDC_i_1_n_0     |                                                                             | top_oscilloscope/my_osc/ad9226_sample_m0/cnt_reg[10]_LDC_i_2_n_0        |                1 |              1 |
+|  top_oscilloscope/my_osc/ad9226_sample_m0/cnt_reg[3]_LDC_i_1_n_0      |                                                                             | top_oscilloscope/my_osc/ad9226_sample_m0/cnt_reg[3]_LDC_i_2_n_0         |                1 |              1 |
+|  top_oscilloscope/my_osc/ad9226_sample_m0/cnt_reg[14]_LDC_i_1_n_0     |                                                                             | top_oscilloscope/my_osc/ad9226_sample_m0/cnt_reg[14]_LDC_i_2_n_0        |                1 |              1 |
+|  top_oscilloscope/my_osc/ad9226_sample_m0/cnt_reg[2]_LDC_i_1_n_0      |                                                                             | top_oscilloscope/my_osc/ad9226_sample_m0/cnt_reg[2]_LDC_i_2_n_0         |                1 |              1 |
+|  top_oscilloscope/my_osc/ad9226_sample_m0/cnt_reg[4]_LDC_i_1_n_0      |                                                                             | top_oscilloscope/my_osc/ad9226_sample_m0/cnt_reg[4]_LDC_i_2_n_0         |                1 |              1 |
+|  top_oscilloscope/my_osc/ad9226_sample_m0/cnt_reg[13]_LDC_i_1_n_0     |                                                                             | top_oscilloscope/my_osc/ad9226_sample_m0/cnt_reg[13]_LDC_i_2_n_0        |                1 |              1 |
+|  top_oscilloscope/my_osc/ad9226_sample_m0/cnt_reg[20]_LDC_i_1_n_0     |                                                                             | top_oscilloscope/my_osc/ad9226_sample_m0/cnt_reg[20]_LDC_i_2_n_0        |                1 |              1 |
+|  top_oscilloscope/my_osc/ad9226_sample_m0/cnt_reg[5]_LDC_i_1_n_0      |                                                                             | top_oscilloscope/my_osc/ad9226_sample_m0/cnt_reg[5]_LDC_i_2_n_0         |                1 |              1 |
+|  top_oscilloscope/my_osc/ad9226_sample_m0/cnt_reg[6]_LDC_i_1_n_0      |                                                                             | top_oscilloscope/my_osc/ad9226_sample_m0/cnt_reg[6]_LDC_i_2_n_0         |                1 |              1 |
+|  top_oscilloscope/my_osc/ad9226_sample_m0/cnt_reg[1]_LDC_i_1_n_0      |                                                                             | top_oscilloscope/my_osc/ad9226_sample_m0/cnt_reg[1]_LDC_i_2_n_0         |                1 |              1 |
+|  top_oscilloscope/my_osc/ad9226_sample_m0/cnt_reg[8]_LDC_i_1_n_0      |                                                                             | top_oscilloscope/my_osc/ad9226_sample_m0/cnt_reg[8]_LDC_i_2_n_0         |                1 |              1 |
+|  top_oscilloscope/my_osc/ad9226_sample_m0/cnt_reg[7]_LDC_i_1_n_0      |                                                                             | top_oscilloscope/my_osc/ad9226_sample_m0/cnt_reg[7]_LDC_i_2_n_0         |                1 |              1 |
+|  top_oscilloscope/my_osc/ad9226_sample_m0/cnt_reg[9]_LDC_i_1_n_0      |                                                                             | top_oscilloscope/my_osc/ad9226_sample_m0/cnt_reg[9]_LDC_i_2_n_0         |                1 |              1 |
+|  top_oscilloscope/my_osc/ad9226_sample_m0/wait_cnt_reg[0]_LDC_i_1_n_0 |                                                                             | top_oscilloscope/my_osc/ad9226_sample_m0/wait_cnt_reg[0]_LDC_i_2_n_0    |                1 |              1 |
+|  top_oscilloscope/my_plj/wait_cnt_reg[10]_P                           |                                                                             | top_oscilloscope/my_plj/wait_cnt_reg[10]_C                              |                1 |              1 |
+|  top_oscilloscope/my_plj/wait_cnt_reg[20]_P                           |                                                                             | top_oscilloscope/my_plj/wait_cnt_reg[20]_C                              |                1 |              1 |
+|  top_oscilloscope/my_plj/wait_cnt_reg[5]_P                            |                                                                             | top_oscilloscope/my_plj/wait_cnt_reg[5]_C                               |                1 |              1 |
+|  top_oscilloscope/my_plj/wait_cnt_reg[1]_P                            |                                                                             | top_oscilloscope/my_plj/wait_cnt_reg[1]_C                               |                1 |              1 |
+|  top_oscilloscope/my_plj/wait_cnt_reg[3]_P                            |                                                                             | top_oscilloscope/my_plj/wait_cnt_reg[3]_C                               |                1 |              1 |
+|  top_oscilloscope/my_plj/wait_cnt_reg[6]_P                            |                                                                             | top_oscilloscope/my_plj/wait_cnt_reg[6]_C                               |                1 |              1 |
+|  top_oscilloscope/my_plj/wait_cnt_reg[4]_P                            |                                                                             | top_oscilloscope/my_plj/wait_cnt_reg[4]_C                               |                1 |              1 |
+|  top_oscilloscope/my_plj/wait_cnt_reg[14]_P                           |                                                                             | top_oscilloscope/my_plj/wait_cnt_reg[14]_C                              |                1 |              1 |
+|  top_oscilloscope/my_plj/wait_cnt_reg[13]_P                           |                                                                             | top_oscilloscope/my_plj/wait_cnt_reg[13]_C                              |                1 |              1 |
+|  top_oscilloscope/my_plj/wait_cnt_reg[15]_P                           |                                                                             | top_oscilloscope/my_plj/wait_cnt_reg[15]_C                              |                1 |              1 |
+|  top_oscilloscope/my_plj/wait_cnt_reg[9]_P                            |                                                                             | top_oscilloscope/my_plj/wait_cnt_reg[9]_C                               |                1 |              1 |
+|  top_oscilloscope/my_plj/wait_cnt_reg[7]_P                            |                                                                             | top_oscilloscope/my_plj/wait_cnt_reg[7]_C                               |                1 |              1 |
+|  top_oscilloscope/my_plj/wait_cnt_reg[2]_P                            |                                                                             | top_oscilloscope/my_plj/wait_cnt_reg[2]_C                               |                1 |              1 |
+|  top_oscilloscope/my_plj/wait_cnt_reg[8]_P                            |                                                                             | top_oscilloscope/my_plj/wait_cnt_reg[8]_C                               |                1 |              1 |
+|  top_oscilloscope/my_plj/wait_cnt_reg[18]_P                           |                                                                             | top_oscilloscope/my_plj/wait_cnt_reg[18]_C                              |                1 |              1 |
+|  top_oscilloscope/my_plj/wait_cnt_reg[12]_P                           |                                                                             | top_oscilloscope/my_plj/wait_cnt_reg[12]_C                              |                1 |              1 |
+|  top_oscilloscope/my_plj/wait_cnt_reg[17]_P                           |                                                                             | top_oscilloscope/my_plj/wait_cnt_reg[17]_C                              |                1 |              1 |
+|  top_oscilloscope/my_plj/wait_cnt_reg[16]_P                           |                                                                             | top_oscilloscope/my_plj/wait_cnt_reg[16]_C                              |                1 |              1 |
+|  top_oscilloscope/my_plj/wait_cnt_reg[19]_P                           |                                                                             | top_oscilloscope/my_plj/wait_cnt_reg[19]_C                              |                1 |              1 |
+|  top_oscilloscope/my_plj/wait_cnt_reg[11]_P                           |                                                                             | top_oscilloscope/my_plj/wait_cnt_reg[11]_C                              |                1 |              1 |
+|  top_oscilloscope/pll_m0/inst/clk_out1                                | top_oscilloscope/my_osc/ad9226_sample_m0/wait_cnt[20]_P_i_1_n_0             | top_oscilloscope/my_plj/wait_cnt_reg[20]_P                              |                1 |              1 |
+|  top_oscilloscope/pll_m0/inst/clk_out1                                | top_oscilloscope/my_osc/ad9226_sample_m0/wait_cnt[20]_P_i_1_n_0             | top_oscilloscope/my_plj/wait_cnt_reg[5]_P                               |                1 |              1 |
+|  top_oscilloscope/pll_m0/inst/clk_out1                                | top_oscilloscope/my_osc/ad9226_sample_m0/wait_cnt[20]_P_i_1_n_0             | top_oscilloscope/my_plj/wait_cnt_reg[1]_P                               |                1 |              1 |
+|  top_oscilloscope/pll_m0/inst/clk_out1                                | top_oscilloscope/my_osc/ad9226_sample_m0/wait_cnt[20]_P_i_1_n_0             | top_oscilloscope/my_plj/wait_cnt_reg[3]_P                               |                1 |              1 |
+|  top_oscilloscope/pll_m0/inst/clk_out1                                | top_oscilloscope/my_osc/ad9226_sample_m0/wait_cnt[20]_P_i_1_n_0             | top_oscilloscope/my_plj/wait_cnt_reg[6]_P                               |                1 |              1 |
+|  top_oscilloscope/pll_m0/inst/clk_out1                                | top_oscilloscope/my_osc/ad9226_sample_m0/wait_cnt[20]_P_i_1_n_0             | top_oscilloscope/my_plj/wait_cnt_reg[4]_P                               |                1 |              1 |
+|  top_oscilloscope/pll_m0/inst/clk_out1                                | top_oscilloscope/my_osc/ad9226_sample_m0/wait_cnt[20]_P_i_1_n_0             | top_oscilloscope/my_plj/wait_cnt_reg[14]_P                              |                1 |              1 |
+|  top_oscilloscope/pll_m0/inst/clk_out1                                | top_oscilloscope/my_osc/ad9226_sample_m0/wait_cnt[20]_P_i_1_n_0             | top_oscilloscope/my_plj/wait_cnt_reg[13]_P                              |                1 |              1 |
+|  top_oscilloscope/pll_m0/inst/clk_out1                                | top_oscilloscope/my_osc/ad9226_sample_m0/wait_cnt[20]_P_i_1_n_0             | top_oscilloscope/my_plj/wait_cnt_reg[15]_P                              |                1 |              1 |
+|  top_oscilloscope/pll_m0/inst/clk_out1                                | top_oscilloscope/my_osc/ad9226_sample_m0/wait_cnt[20]_P_i_1_n_0             | top_oscilloscope/my_plj/wait_cnt_reg[9]_P                               |                1 |              1 |
+|  top_oscilloscope/pll_m0/inst/clk_out1                                | top_oscilloscope/my_osc/ad9226_sample_m0/wait_cnt[20]_P_i_1_n_0             | top_oscilloscope/my_plj/wait_cnt_reg[7]_P                               |                1 |              1 |
+|  top_oscilloscope/pll_m0/inst/clk_out1                                | top_oscilloscope/my_osc/ad9226_sample_m0/wait_cnt[20]_P_i_1_n_0             | top_oscilloscope/my_plj/wait_cnt_reg[2]_P                               |                1 |              1 |
+|  sys_clk_IBUF_BUFG                                                    | top_key_sw_dds/key_process/key_freq_down_inst1/key_value                    | top_key_sw_dds/freq_control/bin_to_bcd_inst/ten_mill_out_reg[0]_0       |                1 |              1 |
+|  top_oscilloscope/pll_m0/inst/clk_out1                                | top_oscilloscope/my_osc/ad9226_sample_m0/wait_cnt[20]_P_i_1_n_0             | top_oscilloscope/my_plj/wait_cnt_reg[8]_P                               |                1 |              1 |
+|  sys_clk_IBUF_BUFG                                                    | top_key_sw_dds/key_process/key_freq_up_inst/key_value                       | top_key_sw_dds/freq_control/bin_to_bcd_inst/ten_mill_out_reg[0]_0       |                1 |              1 |
+|  top_oscilloscope/pll_m0/inst/clk_out1                                | top_oscilloscope/my_osc/ad9226_sample_m0/wait_cnt[20]_P_i_1_n_0             | top_oscilloscope/my_plj/wait_cnt_reg[18]_P                              |                1 |              1 |
+|  top_oscilloscope/pll_m0/inst/clk_out1                                | top_oscilloscope/my_osc/ad9226_sample_m0/wait_cnt[20]_P_i_1_n_0             | top_oscilloscope/my_plj/wait_cnt_reg[12]_P                              |                1 |              1 |
+|  top_oscilloscope/pll_m0/inst/clk_out1                                | top_oscilloscope/my_osc/ad9226_sample_m0/wait_cnt[20]_P_i_1_n_0             | top_oscilloscope/my_plj/wait_cnt_reg[17]_P                              |                1 |              1 |
+|  top_oscilloscope/pll_m0/inst/clk_out1                                | top_oscilloscope/my_osc/ad9226_sample_m0/wait_cnt[20]_P_i_1_n_0             | top_oscilloscope/my_plj/wait_cnt_reg[16]_P                              |                1 |              1 |
+|  top_oscilloscope/pll_m0/inst/clk_out1                                | top_oscilloscope/my_osc/ad9226_sample_m0/wait_cnt[20]_P_i_1_n_0             | top_oscilloscope/my_plj/wait_cnt_reg[19]_P                              |                1 |              1 |
+|  yimiao_rst                                                           |                                                                             | top_oscilloscope/my_osc/ad9226_sample_m0/cnt_reg[14]_LDC_i_2_n_0        |                1 |              1 |
+|  top_oscilloscope/pll_m0/inst/clk_out1                                | top_oscilloscope/my_osc/ad9226_sample_m0/wait_cnt[20]_P_i_1_n_0             | top_oscilloscope/my_plj/wait_cnt_reg[11]_P                              |                1 |              1 |
+|  yimiao_rst                                                           |                                                                             | top_oscilloscope/my_osc/ad9226_sample_m0/cnt_reg[0]_LDC_i_2_n_0         |                1 |              1 |
+|  yimiao_rst                                                           |                                                                             | top_oscilloscope/my_osc/ad9226_sample_m0/cnt_reg[11]_LDC_i_1_n_0        |                1 |              1 |
+|  yimiao_rst                                                           |                                                                             | top_oscilloscope/my_osc/ad9226_sample_m0/cnt_reg[10]_LDC_i_2_n_0        |                1 |              1 |
+|  yimiao_rst                                                           |                                                                             | top_oscilloscope/my_osc/ad9226_sample_m0/cnt_reg[11]_LDC_i_2_n_0        |                1 |              1 |
+|  yimiao_rst                                                           |                                                                             | top_oscilloscope/my_osc/ad9226_sample_m0/cnt_reg[12]_LDC_i_1_n_0        |                1 |              1 |
+|  yimiao_rst                                                           |                                                                             | top_oscilloscope/my_osc/ad9226_sample_m0/cnt_reg[0]_LDC_i_1_n_0         |                1 |              1 |
+|  yimiao_rst                                                           |                                                                             | top_oscilloscope/my_osc/ad9226_sample_m0/cnt_reg[10]_LDC_i_1_n_0        |                1 |              1 |
+|  yimiao_rst                                                           |                                                                             | top_oscilloscope/my_osc/ad9226_sample_m0/cnt_reg[20]_LDC_i_2_n_0        |                1 |              1 |
+|  yimiao_rst                                                           |                                                                             | top_oscilloscope/my_osc/ad9226_sample_m0/cnt_reg[3]_LDC_i_1_n_0         |                1 |              1 |
+|  yimiao_rst                                                           |                                                                             | top_oscilloscope/my_osc/ad9226_sample_m0/cnt_reg[13]_LDC_i_2_n_0        |                1 |              1 |
+|  yimiao_rst                                                           |                                                                             | top_oscilloscope/my_osc/ad9226_sample_m0/cnt_reg[12]_LDC_i_2_n_0        |                1 |              1 |
+|  yimiao_rst                                                           |                                                                             | top_oscilloscope/my_osc/ad9226_sample_m0/cnt_reg[14]_LDC_i_1_n_0        |                1 |              1 |
+|  yimiao_rst                                                           |                                                                             | top_oscilloscope/my_osc/ad9226_sample_m0/cnt_reg[2]_LDC_i_1_n_0         |                1 |              1 |
+|  yimiao_rst                                                           |                                                                             | top_oscilloscope/my_osc/ad9226_sample_m0/cnt_reg[3]_LDC_i_2_n_0         |                1 |              1 |
+|  yimiao_rst                                                           |                                                                             | top_oscilloscope/my_osc/ad9226_sample_m0/cnt_reg[4]_LDC_i_1_n_0         |                1 |              1 |
+|  yimiao_rst                                                           |                                                                             | top_oscilloscope/my_osc/ad9226_sample_m0/cnt_reg[2]_LDC_i_2_n_0         |                1 |              1 |
+|  yimiao_rst                                                           |                                                                             | top_oscilloscope/my_osc/ad9226_sample_m0/cnt_reg[13]_LDC_i_1_n_0        |                1 |              1 |
+|  top_oscilloscope/pll_m0/inst/clk_out1                                |                                                                             | top_oscilloscope/my_plj/wait_cnt_reg[10]_C                              |                1 |              1 |
+|  yimiao_rst                                                           |                                                                             | top_oscilloscope/my_osc/ad9226_sample_m0/cnt_reg[20]_LDC_i_1_n_0        |                1 |              1 |
+|  yimiao_rst                                                           |                                                                             | top_oscilloscope/my_osc/ad9226_sample_m0/cnt_reg[5]_LDC_i_1_n_0         |                1 |              1 |
+|  yimiao_rst                                                           |                                                                             | top_oscilloscope/my_osc/ad9226_sample_m0/cnt_reg[6]_LDC_i_2_n_0         |                1 |              1 |
+|  yimiao_rst                                                           |                                                                             | top_oscilloscope/my_osc/ad9226_sample_m0/cnt_reg[5]_LDC_i_2_n_0         |                1 |              1 |
+|  yimiao_rst                                                           |                                                                             | top_oscilloscope/my_osc/ad9226_sample_m0/cnt_reg[6]_LDC_i_1_n_0         |                1 |              1 |
+|  yimiao_rst                                                           |                                                                             | top_oscilloscope/my_osc/ad9226_sample_m0/cnt_reg[7]_LDC_i_2_n_0         |                1 |              1 |
+|  yimiao_rst                                                           |                                                                             | top_oscilloscope/my_osc/ad9226_sample_m0/cnt_reg[1]_LDC_i_1_n_0         |                1 |              1 |
+|  yimiao_rst                                                           |                                                                             | top_oscilloscope/my_osc/ad9226_sample_m0/cnt_reg[8]_LDC_i_1_n_0         |                1 |              1 |
+|  yimiao_rst                                                           |                                                                             | top_oscilloscope/my_osc/ad9226_sample_m0/cnt_reg[4]_LDC_i_2_n_0         |                1 |              1 |
+|  yimiao_rst                                                           |                                                                             | top_oscilloscope/my_osc/ad9226_sample_m0/cnt_reg[7]_LDC_i_1_n_0         |                1 |              1 |
+|  yimiao_rst                                                           |                                                                             | top_oscilloscope/my_osc/ad9226_sample_m0/cnt_reg[8]_LDC_i_2_n_0         |                1 |              1 |
+|  yimiao_rst                                                           |                                                                             | top_oscilloscope/my_osc/ad9226_sample_m0/cnt_reg[9]_LDC_i_1_n_0         |                1 |              1 |
+|  yimiao_rst                                                           |                                                                             | top_oscilloscope/my_osc/ad9226_sample_m0/cnt_reg[9]_LDC_i_2_n_0         |                1 |              1 |
+|  yimiao_rst                                                           |                                                                             | top_oscilloscope/my_osc/ad9226_sample_m0/cnt_reg[1]_LDC_i_2_n_0         |                1 |              1 |
+|  top_oscilloscope/pll_m0/inst/clk_out1                                |                                                                             | top_oscilloscope/my_osc/ad9226_sample_m0/wait_cnt_reg[0]_LDC_i_2_n_0    |                1 |              1 |
+|  top_oscilloscope/pll_m0/inst/clk_out1                                |                                                                             | top_oscilloscope/my_plj/begin_flag_reg                                  |                1 |              1 |
+|  top_oscilloscope/pll_m0/inst/clk_out1                                |                                                                             | top_oscilloscope/my_plj/wait_cnt_reg[11]_C                              |                1 |              1 |
+|  top_oscilloscope/pll_m0/inst/clk_out1                                |                                                                             | top_oscilloscope/my_plj/wait_cnt_reg[8]_C                               |                1 |              1 |
+|  top_oscilloscope/pll_m0/inst/clk_out1                                |                                                                             | top_oscilloscope/my_plj/wait_cnt_reg[15]_C                              |                1 |              1 |
+|  top_oscilloscope/pll_m0/inst/clk_out1                                |                                                                             | top_oscilloscope/my_plj/wait_cnt_reg[14]_C                              |                1 |              1 |
+|  top_oscilloscope/pll_m0/inst/clk_out1                                |                                                                             | top_oscilloscope/my_plj/wait_cnt_reg[2]_C                               |                1 |              1 |
+|  top_oscilloscope/pll_m0/inst/clk_out1                                |                                                                             | top_oscilloscope/my_plj/wait_cnt_reg[18]_C                              |                1 |              1 |
+|  top_oscilloscope/pll_m0/inst/clk_out1                                |                                                                             | top_oscilloscope/my_plj/wait_cnt_reg[7]_C                               |                1 |              1 |
+|  top_oscilloscope/pll_m0/inst/clk_out1                                |                                                                             | top_oscilloscope/my_plj/wait_cnt_reg[5]_C                               |                1 |              1 |
+|  top_oscilloscope/pll_m0/inst/clk_out1                                |                                                                             | top_oscilloscope/my_plj/wait_cnt_reg[12]_C                              |                1 |              1 |
+|  top_oscilloscope/pll_m0/inst/clk_out1                                |                                                                             | top_oscilloscope/my_plj/wait_cnt_reg[1]_C                               |                1 |              1 |
+|  top_oscilloscope/pll_m0/inst/clk_out1                                |                                                                             | top_oscilloscope/my_plj/wait_cnt_reg[19]_C                              |                1 |              1 |
+|  top_oscilloscope/pll_m0/inst/clk_out1                                |                                                                             | top_oscilloscope/my_plj/wait_cnt_reg[9]_C                               |                1 |              1 |
+|  top_oscilloscope/pll_m0/inst/clk_out1                                |                                                                             | top_oscilloscope/my_plj/wait_cnt_reg[3]_C                               |                1 |              1 |
+|  top_oscilloscope/pll_m0/inst/clk_out1                                |                                                                             | top_oscilloscope/my_plj/wait_cnt_reg[16]_C                              |                1 |              1 |
+|  top_oscilloscope/pll_m0/inst/clk_out1                                |                                                                             | top_oscilloscope/my_plj/wait_cnt_reg[4]_C                               |                1 |              1 |
+|  top_oscilloscope/pll_m0/inst/clk_out1                                |                                                                             | top_oscilloscope/my_plj/wait_cnt_reg[6]_C                               |                1 |              1 |
+|  top_oscilloscope/pll_m0/inst/clk_out1                                |                                                                             | top_oscilloscope/my_plj/wait_cnt_reg[17]_C                              |                1 |              1 |
+|  top_oscilloscope/pll_m0/inst/clk_out1                                |                                                                             | top_oscilloscope/my_plj/wait_cnt_reg[20]_C                              |                1 |              1 |
+|  top_oscilloscope/pll_m0/inst/clk_out1                                |                                                                             | top_oscilloscope/my_plj/wait_cnt_reg[13]_C                              |                1 |              1 |
+|  top_oscilloscope/pll_m0/inst/clk_out1                                |                                                                             | yimiao_rst                                                              |                1 |              1 |
+|  top_oscilloscope/pll_m0/inst/clk_out1                                | top_oscilloscope/my_osc/ad9226_sample_m0/wait_cnt[20]_P_i_1_n_0             | top_oscilloscope/my_osc/ad9226_sample_m0/wait_cnt_reg[0]_LDC_i_1_n_0    |                1 |              1 |
+|  top_oscilloscope/pll_m0/inst/clk_out1                                | top_oscilloscope/my_osc/ad9226_sample_m0/wait_cnt[20]_P_i_1_n_0             | top_oscilloscope/my_plj/wait_cnt_reg[10]_P                              |                1 |              1 |
+|  my_plj/rukou                                                         | top_oscilloscope/my_plj/data3                                               | top_oscilloscope/my_plj/data7_reg[3]_0                                  |                1 |              4 |
+|  my_plj/rukou                                                         | top_oscilloscope/my_plj/data0[3]_i_1_n_0                                    | top_oscilloscope/my_plj/data7_reg[3]_0                                  |                1 |              4 |
+|  my_plj/rukou                                                         | top_oscilloscope/my_plj/data2                                               | top_oscilloscope/my_plj/data7_reg[3]_0                                  |                1 |              4 |
+|  my_plj/rukou                                                         | top_oscilloscope/my_plj/data1                                               | top_oscilloscope/my_plj/data7_reg[3]_0                                  |                1 |              4 |
+|  my_plj/rukou                                                         | top_oscilloscope/my_plj/data7                                               | top_oscilloscope/my_plj/data7_reg[3]_0                                  |                1 |              4 |
+|  my_plj/rukou                                                         | top_oscilloscope/my_plj/data6                                               | top_oscilloscope/my_plj/data7_reg[3]_0                                  |                1 |              4 |
+|  my_plj/rukou                                                         | top_oscilloscope/my_plj/data4                                               | top_oscilloscope/my_plj/data7_reg[3]_0                                  |                1 |              4 |
+|  my_plj/rukou                                                         | top_oscilloscope/my_plj/data5                                               | top_oscilloscope/my_plj/data7_reg[3]_0                                  |                2 |              4 |
+|  sys_clk_IBUF_BUFG                                                    | seg_top/seg_scan_m0/load                                                    | top_key_sw_dds/freq_control/bin_to_bcd_inst/ten_mill_out_reg[0]_0       |                1 |              4 |
+| ~sys_clk_IBUF_BUFG                                                    |                                                                             | top_key_sw_dds/freq_control/bin_to_bcd_inst/ten_mill_out_reg[0]_0       |                2 |              8 |
+|  top_oscilloscope/pll_m0/inst/clk_out2                                |                                                                             | top_oscilloscope/my_osc/wav_display_m0/timing_gen_xy_m0/v_data_reg[4]_0 |                4 |              8 |
+|  top_oscilloscope/pll_m0/inst/clk_out2                                |                                                                             | top_oscilloscope/my_osc/grid_display_m0/timing_gen_xy_m0/SR[0]          |                2 |              9 |
+|  top_oscilloscope/pll_m0/inst/clk_out1                                |                                                                             | top_key_sw_dds/freq_control/bin_to_bcd_inst/ten_mill_out_reg[0]_0       |                2 |              9 |
+|  top_oscilloscope/pll_m0/inst/clk_out2                                |                                                                             | top_oscilloscope/my_osc/wav_display_m0/timing_gen_xy_m0/SR[0]           |                2 |             10 |
+|  top_oscilloscope/pll_m0/inst/clk_out1                                | top_oscilloscope/my_osc/ad9226_sample_m0/adc_buf_wr1_out                    | top_key_sw_dds/freq_control/bin_to_bcd_inst/ten_mill_out_reg[0]_0       |                3 |             11 |
+|  top_oscilloscope/pll_m0/inst/clk_out2                                | top_oscilloscope/my_osc/color_bar_m0/active_x[11]_i_1_n_0                   | top_key_sw_dds/freq_control/bin_to_bcd_inst/ten_mill_out_reg[0]_0       |                4 |             12 |
+|  top_oscilloscope/pll_m0/inst/clk_out2                                | top_oscilloscope/my_osc/color_bar_m0/v_cnt                                  | top_key_sw_dds/freq_control/bin_to_bcd_inst/ten_mill_out_reg[0]_0       |                4 |             12 |
+|  top_oscilloscope/pll_m0/inst/clk_out2                                | top_oscilloscope/my_osc/grid_display_m0/timing_gen_xy_m0/y_cnt[0]_i_1_n_0   | top_key_sw_dds/freq_control/bin_to_bcd_inst/ten_mill_out_reg[0]_0       |                3 |             12 |
+|  top_oscilloscope/pll_m0/inst/clk_out2                                | top_oscilloscope/my_osc/wav_display_m0/timing_gen_xy_m0/y_cnt[0]_i_1__0_n_0 | top_key_sw_dds/freq_control/bin_to_bcd_inst/ten_mill_out_reg[0]_0       |                3 |             12 |
+|  top_oscilloscope/pll_m0/inst/clk_out1                                |                                                                             |                                                                         |                7 |             12 |
+|  top_oscilloscope/pll_m0/inst/clk_out1                                | top_oscilloscope/my_value/min                                               | top_oscilloscope/my_plj/freq_reg[1]_0                                   |                4 |             12 |
+|  top_oscilloscope/pll_m0/inst/clk_out1                                | top_oscilloscope/my_value/max                                               | top_oscilloscope/my_plj/freq_reg[1]_0                                   |                5 |             12 |
+|  sys_clk_IBUF_BUFG                                                    |                                                                             |                                                                         |                5 |             14 |
+|  sys_clk_IBUF_BUFG                                                    | top_key_sw_dds/key_process/key_freq_down_inst1/delay_cnt[0]_i_1__0_n_0      | top_key_sw_dds/freq_control/bin_to_bcd_inst/ten_mill_out_reg[0]_0       |                6 |             21 |
+|  top_oscilloscope/pll_m0/inst/clk_out1                                | top_oscilloscope/my_value/cnt2                                              | top_oscilloscope/my_plj/freq_reg[1]_0                                   |                6 |             21 |
+|  sys_clk_IBUF_BUFG                                                    | top_key_sw_dds/key_process/key_freq_up_inst/delay_cnt[0]_i_1_n_0            | top_key_sw_dds/freq_control/bin_to_bcd_inst/ten_mill_out_reg[0]_0       |                6 |             21 |
+|  top_oscilloscope/pll_m0/inst/clk_out1                                | top_oscilloscope/my_value/begin_flag_reg_n_0                                | top_oscilloscope/my_plj/freq_reg[1]_0                                   |                6 |             21 |
+|  sys_clk_IBUF_BUFG                                                    | top_key_sw_dds/freq_control/freq0                                           | top_key_sw_dds/freq_control/bin_to_bcd_inst/ten_mill_out_reg[0]_0       |               11 |             24 |
+|  sys_clk_IBUF_BUFG                                                    | top_key_sw_dds/freq_control/bin_to_bcd_inst/shift_cnt[23]_i_1_n_0           | top_key_sw_dds/freq_control/bin_to_bcd_inst/ten_mill_out_reg[0]_0       |                9 |             24 |
+|  my_plj/rukou                                                         | top_oscilloscope/my_plj/data0[3]_i_1_n_0                                    | top_oscilloscope/my_plj/freq_reg[1]_0                                   |                7 |             27 |
+|  sys_clk_IBUF_BUFG                                                    | top_key_sw_dds/freq_control/bin_to_bcd_inst/tran_done                       | top_key_sw_dds/freq_control/bin_to_bcd_inst/ten_mill_out_reg[0]_0       |               19 |             32 |
+|  top_oscilloscope/pll_m0/inst/clk_out1                                | top_oscilloscope/my_value/max_s[11]_i_1_n_0                                 | top_oscilloscope/my_plj/data7_reg[3]_0                                  |               27 |             36 |
+|  top_oscilloscope/pll_m0/inst/clk_out2                                |                                                                             |                                                                         |               20 |             39 |
+|  top_oscilloscope/pll_m0/inst/clk_out2                                |                                                                             | top_key_sw_dds/freq_control/bin_to_bcd_inst/ten_mill_out_reg[0]_0       |               13 |             46 |
+|  sys_clk_IBUF_BUFG                                                    | top_key_sw_dds/freq_control/bin_to_bcd_inst/data_reg0                       | top_key_sw_dds/freq_control/bin_to_bcd_inst/ten_mill_out_reg[0]_0       |               14 |             57 |
+|  top_oscilloscope/pll_m0/inst/clk_out1                                | top_oscilloscope/my_value/max_total                                         | top_oscilloscope/my_plj/freq_reg[1]_0                                   |               16 |             64 |
+|  yimiao_rst                                                           |                                                                             | top_key_sw_dds/freq_control/bin_to_bcd_inst/ten_mill_out_reg[0]_0       |               48 |             80 |
+|  sys_clk_IBUF_BUFG                                                    |                                                                             | top_key_sw_dds/freq_control/bin_to_bcd_inst/ten_mill_out_reg[0]_0       |               79 |            238 |
++-----------------------------------------------------------------------+-----------------------------------------------------------------------------+-------------------------------------------------------------------------+------------------+----------------+
+
+
++--------+-----------------------+
+| Fanout | Number of ControlSets |
++--------+-----------------------+
+| 1      |                   115 |
+| 4      |                     9 |
+| 8      |                     2 |
+| 9      |                     2 |
+| 10     |                     1 |
+| 11     |                     1 |
+| 12     |                     7 |
+| 14     |                     1 |
+| 16+    |                    15 |
++--------+-----------------------+
+
+

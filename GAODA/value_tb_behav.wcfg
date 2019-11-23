@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="value_tb_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="glbl" />
+            <top_module name="value_tb" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="7032535000000fs"></ZoomStartTime>
+      <ZoomEndTime time="10942535000001fs"></ZoomEndTime>
+      <Cursor1Time time="7812535000000fs"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="100"></NameColumnWidth>
+      <ValueColumnWidth column_width="131"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="29" />
+   <wvobject fp_name="/value_tb/ad_data" type="array">
+      <obj_property name="ElementShortName">ad_data[11:0]</obj_property>
+      <obj_property name="ObjectShortName">ad_data[11:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/value_tb/sw" type="array">
+      <obj_property name="ElementShortName">sw[2:0]</obj_property>
+      <obj_property name="ObjectShortName">sw[2:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/value_tb/mytop/mytop_plj/yimiao_rst" type="logic">
+      <obj_property name="ElementShortName">yimiao_rst</obj_property>
+      <obj_property name="ObjectShortName">yimiao_rst</obj_property>
+   </wvobject>
+   <wvobject fp_name="/value_tb/adc_clk" type="logic">
+      <obj_property name="ElementShortName">adc_clk</obj_property>
+      <obj_property name="ObjectShortName">adc_clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/value_tb/seg_data" type="array">
+      <obj_property name="ElementShortName">seg_data[7:0]</obj_property>
+      <obj_property name="ObjectShortName">seg_data[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/value_tb/seg_data1" type="array">
+      <obj_property name="ElementShortName">seg_data1[7:0]</obj_property>
+      <obj_property name="ObjectShortName">seg_data1[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/value_tb/seg_sel" type="array">
+      <obj_property name="ElementShortName">seg_sel[7:0]</obj_property>
+      <obj_property name="ObjectShortName">seg_sel[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/value_tb/clk" type="logic">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/value_tb/rst_n" type="logic">
+      <obj_property name="ElementShortName">rst_n</obj_property>
+      <obj_property name="ObjectShortName">rst_n</obj_property>
+   </wvobject>
+   <wvobject fp_name="/value_tb/mytop/max_s" type="array">
+      <obj_property name="ElementShortName">max_s[11:0]</obj_property>
+      <obj_property name="ObjectShortName">max_s[11:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/value_tb/mytop/min_s" type="array">
+      <obj_property name="ElementShortName">min_s[11:0]</obj_property>
+      <obj_property name="ObjectShortName">min_s[11:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/value_tb/mytop/amp_s" type="array">
+      <obj_property name="ElementShortName">amp_s[11:0]</obj_property>
+      <obj_property name="ObjectShortName">amp_s[11:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/value_tb/mytop/max_data" type="array">
+      <obj_property name="ElementShortName">max_data[31:0]</obj_property>
+      <obj_property name="ObjectShortName">max_data[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/value_tb/mytop/min_data" type="array">
+      <obj_property name="ElementShortName">min_data[31:0]</obj_property>
+      <obj_property name="ObjectShortName">min_data[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/value_tb/mytop/amp_data" type="array">
+      <obj_property name="ElementShortName">amp_data[31:0]</obj_property>
+      <obj_property name="ObjectShortName">amp_data[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/value_tb/mytop/pl_segdata" type="array">
+      <obj_property name="ElementShortName">pl_segdata[31:0]</obj_property>
+      <obj_property name="ObjectShortName">pl_segdata[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/value_tb/mytop/myconv/amp_data" type="array">
+      <obj_property name="ElementShortName">amp_data[31:0]</obj_property>
+      <obj_property name="ObjectShortName">amp_data[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/value_tb/mytop/myconv/min_data" type="array">
+      <obj_property name="ElementShortName">min_data[31:0]</obj_property>
+      <obj_property name="ObjectShortName">min_data[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/value_tb/mytop/myconv/max_data" type="array">
+      <obj_property name="ElementShortName">max_data[31:0]</obj_property>
+      <obj_property name="ObjectShortName">max_data[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/value_tb/mytop/mytop_plj/freq" type="array">
+      <obj_property name="ElementShortName">freq[26:0]</obj_property>
+      <obj_property name="ObjectShortName">freq[26:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/value_tb/mytop/mytop_plj/rukou" type="logic">
+      <obj_property name="ElementShortName">rukou</obj_property>
+      <obj_property name="ObjectShortName">rukou</obj_property>
+   </wvobject>
+   <wvobject fp_name="/value_tb/mytop/mytop_plj/freq" type="array">
+      <obj_property name="ElementShortName">freq[26:0]</obj_property>
+      <obj_property name="ObjectShortName">freq[26:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/value_tb/mytop/myvalue/max" type="array">
+      <obj_property name="ElementShortName">max[11:0]</obj_property>
+      <obj_property name="ObjectShortName">max[11:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/value_tb/mytop/myvalue/min" type="array">
+      <obj_property name="ElementShortName">min[11:0]</obj_property>
+      <obj_property name="ObjectShortName">min[11:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/value_tb/mytop/myvalue/max_total" type="array">
+      <obj_property name="ElementShortName">max_total[31:0]</obj_property>
+      <obj_property name="ObjectShortName">max_total[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/value_tb/mytop/myvalue/min_total" type="array">
+      <obj_property name="ElementShortName">min_total[31:0]</obj_property>
+      <obj_property name="ObjectShortName">min_total[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/value_tb/mytop/myconv/max_r" type="array">
+      <obj_property name="ElementShortName">max_r[11:0]</obj_property>
+      <obj_property name="ObjectShortName">max_r[11:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/value_tb/mytop/myconv/min_r" type="array">
+      <obj_property name="ElementShortName">min_r[11:0]</obj_property>
+      <obj_property name="ObjectShortName">min_r[11:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/value_tb/mytop/myconv/amp_r" type="array">
+      <obj_property name="ElementShortName">amp_r[11:0]</obj_property>
+      <obj_property name="ObjectShortName">amp_r[11:0]</obj_property>
+   </wvobject>
+</wave_config>

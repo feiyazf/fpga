@@ -1,0 +1,15 @@
+0.6
+2017.4
+Dec 15 2017
+21:07:18
+C:/Users/feiya/Desktop/max/conv.v,1574244488,verilog,,C:/Users/feiya/Desktop/max/seg_decoder.v,,conv,,,../../../../value.srcs/sources_1/ip/clk_wiz_0,,,,,
+C:/Users/feiya/Desktop/max/seg_decoder.v,1562045692,verilog,,C:/Users/feiya/Desktop/max/seg_scan.v,,seg_decoder,,,../../../../value.srcs/sources_1/ip/clk_wiz_0,,,,,
+C:/Users/feiya/Desktop/max/seg_scan.v,1568792636,verilog,,C:/Users/feiya/Desktop/max/value/value.srcs/sources_1/new/top.v,,seg_scan,,,../../../../value.srcs/sources_1/ip/clk_wiz_0,,,,,
+C:/Users/feiya/Desktop/max/top_plj.v,1574241565,verilog,,C:/Users/feiya/Desktop/max/top_seg.v,,top_plj,,,../../../../value.srcs/sources_1/ip/clk_wiz_0,,,,,
+C:/Users/feiya/Desktop/max/top_seg.v,1569745300,verilog,,C:/Users/feiya/Desktop/max/value.v,,seg_top,,,../../../../value.srcs/sources_1/ip/clk_wiz_0,,,,,
+C:/Users/feiya/Desktop/max/value.v,1574236449,verilog,,C:/Users/feiya/Desktop/max/value/value.srcs/sim_1/new/value_tb.v,,test,,,../../../../value.srcs/sources_1/ip/clk_wiz_0,,,,,
+C:/Users/feiya/Desktop/max/value/value.sim/sim_1/behav/xsim/glbl.v,1513215259,verilog,,,,glbl,,,,,,,,
+C:/Users/feiya/Desktop/max/value/value.srcs/sim_1/new/value_tb.v,1574243475,verilog,,,,value_tb,,,../../../../value.srcs/sources_1/ip/clk_wiz_0,,,,,
+C:/Users/feiya/Desktop/max/value/value.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.v,1574174518,verilog,,C:/Users/feiya/Desktop/max/conv.v,,clk_wiz_0,,,../../../../value.srcs/sources_1/ip/clk_wiz_0,,,,,
+C:/Users/feiya/Desktop/max/value/value.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0_clk_wiz.v,1574174517,verilog,,C:/Users/feiya/Desktop/max/value/value.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.v,,clk_wiz_0_clk_wiz,,,../../../../value.srcs/sources_1/ip/clk_wiz_0,,,,,
+C:/Users/feiya/Desktop/max/value/value.srcs/sources_1/new/top.v,1574235992,verilog,,C:/Users/feiya/Desktop/max/top_plj.v,,top,,,../../../../value.srcs/sources_1/ip/clk_wiz_0,,,,,
